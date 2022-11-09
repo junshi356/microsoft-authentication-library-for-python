@@ -2,12 +2,21 @@
   "build": {
     "markdownEngineName": "markdig",
     "content": [
+	  {
+        "files": [
+          "**/toc.yml",
+          "**/toc.md"
+        ],
+        "src": "docs-ref-autogen",
+        "dest": "api/msal_py_toc",
+        "version": "msal-py-latest"
+      },
       {
         "files": [
           "**/*.md",
           "**/*.yml"
         ],
-	"src": "docs-ref-autogen",
+		"src": "docs-ref-autogen",
         "exclude": [
           "**/obj/**",
           "**/includes/**",
@@ -15,14 +24,17 @@
           "LICENSE",
           "LICENSE-CODE",
           "ThirdPartyNotices"
-        ]
+        ],
+        "dest":"api",
+        "version": "msal-py-latest"
       },
-	  {
+      {
         "files": [
           "**/*.yml"
         ],
         "src": "breadcrumb",
-        "dest": "breadcrumb",
+        "dest": "api/msal_py_breadcrumb",
+        "version": "msal-py-latest",
         "exclude": [
           "**/obj/**",
           "**/includes/**"
@@ -38,12 +50,23 @@
         "exclude": [
           "**/obj/**",
           "**/includes/**"
-        ]
+        ],
+        "version": "msal-py-latest"
       }
     ],
+    "versions": {
+      "msal-py-latest": {
+        "dest": "msal-py-latest"
+      }
+    },
     "overwrite": [],
     "externalReference": [],
     "globalMetadata": {
+	  "ms.topic": "reference",
+      "ms.author": "dmwendia",
+      "manager": "dmwendia",
+      "ms.service": "active-directory",
+	  "apiPlatform": "python",
       "breadcrumb_path": "~/breadcrumb/toc.yml"
     },
     "fileMetadata": {},
