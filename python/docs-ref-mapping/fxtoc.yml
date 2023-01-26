@@ -1,7 +1,0 @@
-- name: SDK reference
-  uid: msal.python.landingPage.reference
-  landingPageType: Root
-  expanded: true
-  href: ~/msal/overview-msal.md
-  children:
-    - '**'
