@@ -1,0 +1,6 @@
+- name: Reference
+  uid: msal.docset.reference
+  landingPageType: Root
+  expanded: true
+  children:
+  - '*' 
