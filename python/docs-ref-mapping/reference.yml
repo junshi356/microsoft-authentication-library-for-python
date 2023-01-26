@@ -1,6 +1,7 @@
-- name: Reference
-  uid: msal.docset.reference
+- name: SDK reference
+  uid: msal.sdk.landingPage.reference
   landingPageType: Root
   expanded: true
+  href: ~/msal/msal-overview.md
   children:
-  - '*' 
+    - '**'
