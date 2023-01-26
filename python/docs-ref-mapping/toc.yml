@@ -1,7 +1,2 @@
 - name: Python reference
-  uid: msal.python.landingPage.reference
-  landingPageType: Root
-  expanded: true
   href: ~/msal/msal-overview.md
-  children:
-    - '**'
