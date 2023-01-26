@@ -1,0 +1,5 @@
+- name: API Reference
+  landingPageType: Root
+  expanded: true
+  children:
+  - '**' 
