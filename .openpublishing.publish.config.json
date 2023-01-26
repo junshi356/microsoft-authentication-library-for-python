@@ -30,7 +30,6 @@
       },
       "JoinTOCPlugin": [
         {
-		  "TopLevelTOC": "msal/docs-ref-mapping/fxtoc.yml",
           "ReferenceTOC": "python/docs-ref-autogen/toc.yml",
           "ReferenceTOCUrl": "/python/api/msal_py_toc/toc.json?view=msal-py-latest",
 		  "ConceptualTOC": "docs-ref-conceptual/toc.yml",
