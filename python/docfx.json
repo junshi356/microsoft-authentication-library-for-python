@@ -25,6 +25,15 @@
           "**/*.md",
           "**/*.yml"
         ],
+        "src": "docs-ref-mapping",
+        "dest": "api/msal",
+        "version": "msal-py-latest"
+      },
+      {
+        "files": [
+          "**/*.md",
+          "**/*.yml"
+        ],
 		"src": "docs-ref-autogen",
         "exclude": [
           "**/obj/**",

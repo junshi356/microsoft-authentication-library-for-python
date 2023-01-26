@@ -1,5 +1,5 @@
-- name: SDK reference
-  uid: msal.sdk.landingPage.reference
+- name: Python reference
+  uid: msal.python.landingPage.reference
   landingPageType: Root
   expanded: true
   href: ~/msal/msal-overview.md
