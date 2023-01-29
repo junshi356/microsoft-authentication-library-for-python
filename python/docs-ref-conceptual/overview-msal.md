@@ -6,7 +6,7 @@ ms.author: dmwendia
 ms.data: 11/21/2022
 ms.topic: reference
 ms.devlang: python
-ms.service: activedirectory
+ms.service: active-directory
 ---
 # Microsoft Authentication Library (MSAL) for Python
 
