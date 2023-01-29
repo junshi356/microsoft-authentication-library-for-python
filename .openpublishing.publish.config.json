@@ -39,17 +39,15 @@
         ],
       "JoinTOCPlugin": [
         {
-		  "TopLevelTOC": "msal/docs-ref-mapping/ref-toc.yml",
           "ReferenceTOC": "python/docs-ref-autogen/toc.yml",
           "ReferenceTOCUrl": "/python/api/msal_py_toc/toc.json?view=msal-py-latest",
-		  "ConceptualTOC": "docs-ref-conceptual/toc.yml",
+          "ConceptualTOC": "docs-ref-conceptual/toc.yml",
           "ConceptualTOCUrl": "/python/api/msal/toc.json?view=msal-py-latest",
           "ContainerPageMetadata": {
             "langs": [
               "python"
             ]
-          },
-          "ContainerPageYamlMime": "YamlMime:UniversalReference"
+          }
         }
       ]
     }
