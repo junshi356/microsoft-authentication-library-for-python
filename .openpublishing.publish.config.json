@@ -5,7 +5,7 @@
       "build_source_folder": "python",
       "build_output_subfolder": "microsoft-authentication-library-for-python",
       "locale": "en-us",
-      "monikers": [],
+      "monikers": ["msal-py-latest"],
       "moniker_ranges": [],
       "open_to_public_contributors": false,
       "type_mapping": {
@@ -22,7 +22,34 @@
       "build_entry_point": "docs",
       "template_folder": "_themes",
       "base_path": "python",
-      "site_name": "Docs"
+      "site_name": "Docs",
+      "customized_tasks": {
+        "docset_prebuild": [
+          "_dependentPackages/CommonPlugins/tools/JoinTOC.ps1"
+        ]
+      },
+      "dependent_packages": [
+          {
+            "id": "Microsoft.OpenPublishing.CommonPlugins",
+            "nuget_feed": "https://www.myget.org/F/op/api/v2",
+            "path_to_root": "_dependentPackages/CommonPlugins",
+            "target_framework": "net45",
+            "version": "latest"
+          }
+        ],
+      "JoinTOCPlugin": [
+        {
+          "ReferenceTOC": "docs-ref-autogen/toc.yml",
+          "ReferenceTOCUrl": "/python/api/msal_py_toc/toc.json?view=msal-py-latest",
+          "ConceptualTOC": "docs-ref-conceptual/toc.yml",
+          "ConceptualTOCUrl": "/python/api/msal/toc.json?view=msal-py-latest",
+          "ContainerPageMetadata": {
+            "langs": [
+              "python"
+            ]
+          }
+        }
+      ]
     }
   ],
   "notification_subscribers": [],
