@@ -3,7 +3,7 @@ title: Microsoft Authentication Library for Python
 description: Reference for Microsoft Authentication Library for Python
 author: Dickson-Mwendia
 ms.author: dmwendia
-ms.data: 11/21/2023
+ms.data: 01/30/2023
 ms.topic: reference
 ms.devlang: python
 ms.service: active-directory
