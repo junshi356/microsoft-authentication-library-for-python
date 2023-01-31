@@ -3,7 +3,7 @@ title: Microsoft Authentication Library for Python
 description: Reference for Microsoft Authentication Library for Python
 author: Dickson-Mwendia
 ms.author: dmwendia
-ms.data: 11/21/2022
+ms.data: 01/30/2023
 ms.topic: reference
 ms.devlang: python
 ms.service: active-directory
@@ -13,8 +13,6 @@ ms.service: active-directory
 Get started with the Microsoft Authentication Library for Python to sign in users or apps with Microsoft identities ([Azure AD](https://azure.microsoft.com/services/active-directory/), [Microsoft Accounts](https://account.microsoft.com) and [Azure AD B2C](https://azure.microsoft.com/services/active-directory-b2c/) accounts) and obtain tokens to call Microsoft APIs such as [Microsoft Graph](https://graph.microsoft.io/) or your own APIs registered with the [Microsoft identity platform](https://aka.ms/aaddevv2).
 
 Follow steps to install the package and try out example code for basic tasks.
-
-[Quickstart](/azure/active-directory/develop/quickstart-v2-python-webapp) | [API reference documentation](/python/api/msal/msal?view=azure-python) | [Samples](https://aka.ms/aaddevsamplesv2)
 
 ## Prerequisites
 
@@ -80,17 +78,3 @@ Acquiring tokens with MSAL Python follows this 3-step pattern. This is the high 
        print(result.get("error_description"))
        print(result.get("correlation_id"))  # You may need this when reporting a bug
    ```
-
-## Migrate from ADAL to MSAL
-
-If your application is using ADAL Python, you should update it to use MSAL Python. No new feature work will be done in ADAL Python.
-
-See the [ADAL to MSAL migration](/azure/active-directory/develop/migrate-python-adal-msal) guide.
-
-## Next Steps
-
-- [Handle errors and exceptions in MSAL Python](https://docs.microsoft.com/azure/active-directory/develop/msal-error-handling-python): Learn about the different types of errors and how to handle common sign-in errors.
-- [Logging in MSAL Python](https://docs.microsoft.com/azure/active-directory/develop/msal-logging-python): Learn how to generate log messages that can help diagnose issues.
-
-<!--Reference-style links -->
-[azure_sub]: https://azure.microsoft.com/free/
