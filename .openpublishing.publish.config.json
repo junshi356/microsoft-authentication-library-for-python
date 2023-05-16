@@ -5,7 +5,9 @@
       "build_source_folder": "python",
       "build_output_subfolder": "microsoft-authentication-library-for-python",
       "locale": "en-us",
-      "monikers": ["msal-py-latest"],
+      "monikers": [
+        "msal-py-latest"
+      ],
       "moniker_ranges": [],
       "open_to_public_contributors": false,
       "type_mapping": {
@@ -21,22 +23,20 @@
       },
       "build_entry_point": "docs",
       "template_folder": "_themes",
-      "base_path": "python",
-      "site_name": "Docs",
       "customized_tasks": {
         "docset_prebuild": [
           "_dependentPackages/CommonPlugins/tools/JoinTOC.ps1"
         ]
       },
       "dependent_packages": [
-          {
-            "id": "Microsoft.OpenPublishing.CommonPlugins",
-            "nuget_feed": "https://www.myget.org/F/op/api/v2",
-            "path_to_root": "_dependentPackages/CommonPlugins",
-            "target_framework": "net45",
-            "version": "latest"
-          }
-        ],
+        {
+          "id": "Microsoft.OpenPublishing.CommonPlugins",
+          "nuget_feed": "https://www.myget.org/F/op/api/v2",
+          "path_to_root": "_dependentPackages/CommonPlugins",
+          "target_framework": "net45",
+          "version": "latest"
+        }
+      ],
       "JoinTOCPlugin": [
         {
           "ReferenceTOC": "docs-ref-autogen/toc.yml",
@@ -50,6 +50,20 @@
           }
         }
       ]
+    },
+    {
+      "docset_name": "msal-python-conceptual",
+      "build_source_folder": "msal-python-conceptual",
+      "build_output_subfolder": "msal-python-conceptual",
+      "locale": "en-us",
+      "monikers": [],
+      "moniker_ranges": [],
+      "open_to_public_contributors": true,
+      "type_mapping": {
+        "Conceptual": "Content"
+      },
+      "build_entry_point": "docs",
+      "template_folder": "_themes"
     }
   ],
   "notification_subscribers": [],
