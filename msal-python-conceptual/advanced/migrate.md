@@ -31,9 +31,9 @@ for old_rt, old_scope in get_preexisting_rt_and_their_scopes_from_elsewhere(...)
     scopes = old_scope.split()
         # If your old RT came from ADAL Python which uses resource rather than scope,
         # you need to somehow convert your v1 resource into v2 scopes
-        # See https://docs.microsoft.com/en-us/azure/active-directory/develop/azure-ad-endpoint-comparison#scopes-not-resources
+        # See /azure/active-directory/develop/azure-ad-endpoint-comparison#scopes-not-resources
         # You can probably just append "/.default" to your v1 resource to form a scope
-        # See https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent#the-default-scope
+        # See /azure/active-directory/develop/v2-permissions-and-consent#the-default-scope
 
     result = app.client.obtain_token_by_refresh_token(old_rt, scope=scopes)
     # Providing that the above function call would succeed, the new token(s) would be returned,
@@ -47,19 +47,19 @@ You can also use this method for various integration scenarios where you have a 
 
 ## Differences
 
-If you are already familiar with the Azure AD for developers (v1.0) endpoint (and ADAL Python), you might want to read [What's different about the Microsoft identity platform (v2.0) endpoint?](https://docs.microsoft.com/en-us/azure/active-directory/develop/azure-ad-endpoint-comparison).
+If you are already familiar with the Azure AD for developers (v1.0) endpoint (and ADAL Python), you might want to read [What's different about the Microsoft identity platform (v2.0) endpoint?](/azure/active-directory/develop/azure-ad-endpoint-comparison).
 
 ## Scopes not resources
 
-ADAL Python acquires tokens for resources, but MSAL Python acquires tokens for scopes. The API surface in MSAL Python does not have resource paramater anymore. You would need to provide scopes as a list of strings that declare the desired permissions and resources that are requested. Well known scopes are the [Microsoft Graph's scopes](https://docs.microsoft.com/en-us/graph/permissions-reference).
+ADAL Python acquires tokens for resources, but MSAL Python acquires tokens for scopes. The API surface in MSAL Python does not have resource paramater anymore. You would need to provide scopes as a list of strings that declare the desired permissions and resources that are requested. Well known scopes are the [Microsoft Graph's scopes](/graph/permissions-reference).
 
 You can use the `/.default` scope suffix to help migrate your apps from the v1.0 endpoint (ADAL) to the Microsoft identity platform endpoint (MSAL). For example, a scope value of `https://graph.microsoft.com/.default` is functionally the same as the v1.0 endpoints `resource=https://graph.microsoft.com`. Even if your resource was not in the URL form, but a resource ID on the form `resource_id = "XXXXXXXX-XXXX-XXXX-XXXXXXXXXXXX"`, you can still use `scope = [ resource_id + "/.default" ]`.
 
 Reference: 
 
-* [The /.default scope](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent#the-default-scope)
+* [The /.default scope](/azure/active-directory/develop/v2-permissions-and-consent#the-default-scope)
 
-* [Scopes for a Web API accepting v1.0 tokens.](https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-v1-app-scopes)
+* [Scopes for a Web API accepting v1.0 tokens.](/azure/active-directory/develop/msal-v1-app-scopes)
 
 
 ## API mapping

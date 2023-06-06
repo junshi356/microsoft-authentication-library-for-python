@@ -4,7 +4,7 @@
 
 You can use MSAL Python to sign-in users with social identities, acquire token, customize the sign-in experience, by using [Azure AD B2C](https://aka.ms/aadb2c).
 AAD B2C is built around the notion of
-[User Flows (formerly known as policies)](https://docs.microsoft.com/en-us/azure/active-directory-b2c/active-directory-b2c-reference-policies).
+[User Flows (formerly known as policies)](/azure/active-directory-b2c/active-directory-b2c-reference-policies).
 In MSAL Python, specifying a user flow translates to providing an authority.
 
 * When you instantiate the client application, you need to specify the user flow in authority as
@@ -92,7 +92,7 @@ The following content serves as a mini-tutorial.
 
 * In your AzureAD B2C tenant, create a new user flow and select **Sign in using ROPC**.
 This will enable the ROPC user flow for your tenant.
-See [Configure the resource owner password credentials flow](https://docs.microsoft.com/en-us/azure/active-directory-b2c/configure-ropc) for more details.
+See [Configure the resource owner password credentials flow](/azure/active-directory-b2c/configure-ropc) for more details.
 * Once you create the msal instance with the authority which contains the ROPC user flow,
 the [`acquire_token_by_username_password(...)`](https://msal-python.readthedocs.io/en/latest/#msal.PublicClientApplication.acquire_token_by_username_password)
 would work as usual.

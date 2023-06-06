@@ -214,7 +214,7 @@ methods:
 
       Each scope needs to be in the Microsoft identity platform (v2) format.
 
-      See [Scopes not resources](https://docs.microsoft.com/en-us/azure/active-directory/develop/migrate-python-adal-msal#scopes-not-resources).'
+      See [Scopes not resources](/azure/active-directory/develop/migrate-python-adal-msal#scopes-not-resources).'
     isRequired: true
     types:
     - <xref:list>
@@ -429,7 +429,7 @@ methods:
 
       which would trigger an Implicit Grant, but that is
 
-      [not recommended](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-implicit-grant-flow#is-the-implicit-grant-suitable-for-my-app).'
+      [not recommended](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow#is-the-implicit-grant-suitable-for-my-app).'
     defaultValue: code
     types:
     - <xref:str>
@@ -460,10 +460,10 @@ methods:
 
       More information on possible values
 
-      [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow#request-an-authorization-code)
+      [here](/azure/active-directory/develop/v2-oauth2-auth-code-flow#request-an-authorization-code)
       and
 
-      [here](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-oapx/86fb452d-e34a-494e-ac61-e526e263b6d8).'
+      [here](/openspecs/windows_protocols/ms-oapx/86fb452d-e34a-494e-ac61-e526e263b6d8).'
     defaultValue: None
   - name: claims_challenge
     description: 'The claims_challenge parameter requests specific claims requested
@@ -538,10 +538,10 @@ methods:
 
       More information on possible values
 
-      [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow#request-an-authorization-code)
+      [here](/azure/active-directory/develop/v2-oauth2-auth-code-flow#request-an-authorization-code)
       and
 
-      [here](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-oapx/86fb452d-e34a-494e-ac61-e526e263b6d8).'
+      [here](/openspecs/windows_protocols/ms-oapx/86fb452d-e34a-494e-ac61-e526e263b6d8).'
     defaultValue: None
   - name: max_age
     description: 'OPTIONAL. Maximum Authentication Age.

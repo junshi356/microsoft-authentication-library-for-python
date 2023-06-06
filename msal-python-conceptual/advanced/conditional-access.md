@@ -3,7 +3,7 @@
 ## Background
 
 When getting tokens silently, your application may receive errors when a
-[Conditional Access claims challenge](https://docs.microsoft.com/en-us/azure/active-directory/develop/conditional-access-dev-guide)
+[Conditional Access claims challenge](/azure/active-directory/develop/conditional-access-dev-guide)
 such as MFA policy is required by an API you're trying to access.
 
 The pattern for handling this error is to interactively acquire a token using MSAL. Interactively acquiring a token prompts the user and gives them the opportunity to satisfy the required Conditional Access policy.
@@ -12,14 +12,14 @@ The pattern for handling this error is to interactively acquire a token using MS
 > There are certain conditional access policies that do not require user interaction to comply with the policy. In such cases, it is recommended to use the acquire_token_silent method to handle the claims challenge that is returned and avoid prompting user interaction.
 
 In certain cases when calling an API requiring Conditional Access, you can receive a claims challenge in the error from the API. For instance if the Conditional Access policy is to have a managed device (Intune) the error will be something like
-[AADSTS53000: Your device is required to be managed to access this resource](https://docs.microsoft.com/en-us/azure/active-directory/develop/reference-aadsts-error-codes)
+[AADSTS53000: Your device is required to be managed to access this resource](/azure/active-directory/develop/reference-aadsts-error-codes)
 or something similar. In this case, you can pass the claims in the acquire token call so that the user is prompted to satisfy the appropriate policy.
 
 ## Handling Claim Challenge in MSAL Python
 
 When calling an API requiring Conditional Access, your application will need to handle claim challenge error.
 This will appear as
-[an MSAL Python error response](https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-handling-exceptions?tabs=python)
+[an MSAL Python error response](/azure/active-directory/develop/msal-handling-exceptions?tabs=python)
 where the Claims property won't be empty.
 
 To handle the claim challenge, you'll need to use the `claims_challenge` parameter of the `get_authorization_request_url()` method. In cases that do not require interactions, you'll need to use the `claims_challenge` parameter in the `acquire_token_silent()` method and the method will use the refresh token to obtain a new token.
