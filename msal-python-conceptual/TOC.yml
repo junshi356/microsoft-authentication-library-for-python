@@ -1,43 +1,59 @@
-- name: Getting Started
+- name: Getting started
   items:
   - name: Why use MSAL Python
     href: getting-started/why-use-msal-python.md
-  - name: Register your app with AAD
+  - name: Register your app with Azure AD
     href: /azure/active-directory/develop/active-directory-integrating-applications
   - name: Scenarios
     href: getting-started/scenarios.md
-  - name: Client Applications
+  - name: Client applications
     href: getting-started/client-applications.md
   - name: Acquiring tokens
     href: getting-started/acquiring-tokens.md
   - name: Calling a protected API
     href: getting-started/call-protected-web-api.md
 
+- name: Advanced topics
+  items:
+  - name: Migrate to MSAL Python
+    href: /azure/active-directory/develop/migrate-python-adal-msal
+  - name: Logging
+    href: /azure/active-directory/develop/msal-logging?tabs=python
+  - name: Handle errors and exceptions
+    href: /azure/active-directory/develop/msal-handling-exceptions?tabs=python)
+  - name: Conditional access
+    href: advanced/conditional-access.md
+  - name: Token cache serialization
+    href: /azure/active-directory/develop/msal-python-token-cache-serialization
+  - name: Developing an Azure AD B2C app with MSAL Python
+    href: advanced/aad-b2c.md
+  - name: Active Directory Federation Services (ADFS) Support
+    href: /azure/active-directory/develop/msal-python-adfs-support
+  - name: National clouds
+    href: /azure/active-directory/develop/msal-national-cloud?tabs=python
+  - name: advanced/username-password-authentication.md
+  - name: How to generate secret and/or certificate for Confidential Client
+    href: advanced/client-credentials.md
+  - name: Handle SameSite cookie changes in Chrome
+    href: /azure/active-directory/develop/howto-handle-samesite-cookie-changes-chrome-browser?tabs=python
+  - name: Admin consent
+    href: advanced/admin-constent.md
+  - name: Migrate to MSAL Python
+    href: advanced/migrate.md
+  - name: Logging
+    href: advanced/logging.md
+  - name: Instance metadata caching
+    href: advanced/instance-metadata-caching.md
+  - name: Client capabilities
+    href: advanced/client-capabilities.md
+  - name: Best practices
+    href: advanced/best-practices.md
 
-### Advanced topics
-
-* [Migrate to MSAL Python](https://docs.microsoft.com/en-us/azure/active-directory/develop/migrate-python-adal-msal)
-* [Logging](https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-logging?tabs=python)
-* [Handle Errors and Exceptions](https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-handling-exceptions?tabs=python)
-* [Conditional Access](Conditional-Access-and-Claims-Challenges)
-* [Token Cache Serialization](https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-python-token-cache-serialization)
-* [[Developing an AAD B2C app with MSAL Python]]
-* [Active Directory Federation Services (AD FS) Support](https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-python-adfs-support)
-* [National Clouds](https://docs.microsoft.com/en-us/azure/active-directory/develop/msal-national-cloud?tabs=python)
-* [[Username Password Authentication]]
-* [How to generate secret and/or certificate for Confidential Client](https://github.com/AzureAD/microsoft-authentication-library-for-python/wiki/Client-Credentials)
-* [Handle SameSite cookie changes on Chrome](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-handle-samesite-cookie-changes-chrome-browser?tabs=python)
-* [[Admin Consent]]
-
-### News
-* [Releases](https://github.com/AzureAD/microsoft-authentication-library-for-python/releases)
-* [MSAL Python 1.0.0 Public Preview](msal-python-1-release)
-* [MSAL Python is generally available](https://developer.microsoft.com/en-us/identity/blogs/microsoft-authentication-libraries-for-java-and-python-are-now-generally-available/)
-* [[Roadmap]]
-
-### Relevant Resources
-
-* [Reference documentation](https://msal-python.rtfd.io/)
-* [AAD Developer Guide](https://aka.ms/aaddevv2)
-* [Community-driven FAQs](../issues?q=is%3Aissue+label%3Aquestion+sort%3Acomments-desc)
-* [Microsoft Authentication Client Libraries on different platforms and languages](https://docs.microsoft.com/en-us/azure/active-directory/develop/reference-v2-libraries#microsoft-supported-libraries-by-os--language)
+- name: Additional resources
+  items:
+  - name: Releases
+    href: https://github.com/AzureAD/microsoft-authentication-library-for-python/releases
+  - name: Azure AD Developer Guide
+    href: https://aka.ms/aaddevv2
+  - name: Code samples
+    href: /azure/active-directory/develop/sample-v2-code

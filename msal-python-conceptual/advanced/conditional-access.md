@@ -24,17 +24,15 @@ where the Claims property won't be empty.
 
 To handle the claim challenge, you'll need to use the `claims_challenge` parameter of the `get_authorization_request_url()` method. In cases that do not require interactions, you'll need to use the `claims_challenge` parameter in the `acquire_token_silent()` method and the method will use the refresh token to obtain a new token.
 
-**Claims challenge** is a directive in the *www-authenticate* header that the resource provider(ex: MS Graph) will respond with, when an access token is not authorized and a new access token is required. An example claims challenge from resource provider(ex: MS Graph) should look like this. It consists of HTTP Status code which must be 401 and 
-    *www-authenticate* header which contains the fields mentioned above.
+**Claims challenge** is a directive in the *www-authenticate* header that the resource provider(ex: MS Graph) will respond with, when an access token is not authorized and a new access token is required. An example claims challenge from resource provider(ex: MS Graph) should look like this. It consists of HTTP Status code which must be 401 and *www-authenticate* header which contains the fields mentioned above.
 
-```HTML
+```http
 HTTP 401; Unauthorized 
 www-authenticate=Bearer realm="", 
 authorization_uri="https://login.microsoftonline.com/common/oauth2/authorize", 
 error="insufficient_claims", 
 claims="returned_claims"
 ```
-    
 
 - Clients need to extract the claims and then pass it to acquire_token_by_* method. If the claims value returned from the resource is base64-encoded, it needs to be decoded before calling MSAL. MSAL acquire_token methods accept claims as a json string. This is an example of how claims returned from the resource provider can be handled using authorization code flow.
 
