@@ -5,7 +5,7 @@ description: "The Azure AD service provides features and policies which are appl
 
 # Client capabilities
 
-The Azure AD service provides features and policies which are applicable in certain scenarios, such as [conditional access](Conditional-Access-and-Claims-Challenges) policies. The Azure AD service needs to determine if a client application is participating in the feature or capable of handling the policy, for the end to end scenario to work.
+The Azure AD service provides features and policies which are applicable in certain scenarios, such as [conditional access](./conditional-access.md) policies. The Azure AD service needs to determine if a client application is participating in the feature or capable of handling the policy, for the end to end scenario to work.
 
 - The **client capabilities** parameter in the application object allows client applications to indicate their compliance with a scenario and readiness to handle the policies or features, so that Azure AD can apply them for the client. 
 
@@ -16,8 +16,7 @@ The Azure AD service provides features and policies which are applicable in cert
     ```python
     app = msal.PublicClientApplication(client_id="client_id", authority="your_authority", client_capabilities = ["CP1"])
     ```
+
 - Once these are set at the application level, they will be sent in all the requests to the Azure AD authorize and token endpoints. 
-
 - When setting a capability, the client application should make sure that the policy or feature is handled in the application.
-
-    - In the above example,  when such a capability(`CP1`) is set on the application object, the client application should make sure that a claims challenge from the resource provider(ex: MS Graph) is handled in the application. You can read more details about it in [handling the claims challenge ](Conditional-Access-and-Claims-Challenges#handling-claim-challenge-in-msal-python).
+  - In the above example,  when such a capability(`CP1`) is set on the application object, the client application should make sure that a claims challenge from the resource provider(ex: MS Graph) is handled in the application. You can read more details about it in [handling the claims challenge ](./conditional-access.md#handling-claim-challenge-in-msal-python).

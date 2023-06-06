@@ -39,27 +39,27 @@ claims="returned_claims"
 
 Clients need to extract the claims and then pass it to acquire_token_by_* method. If the claims value returned from the resource is base64-encoded, it needs to be decoded before calling MSAL. MSAL acquire_token methods accept claims as a json string. This is an example of how claims returned from the resource provider can be handled using authorization code flow.
 
-    ``` Python
-    claims_challenge = "claims returned from resource provider"
-    # if claims parameter is encoded, decode it and use the decoded claims
-    # decoded_claims_challenge = str(base64.b64decode(claims), "utf-8")
+```python
+claims_challenge = "claims returned from resource provider"
+# if claims parameter is encoded, decode it and use the decoded claims
+# decoded_claims_challenge = str(base64.b64decode(claims), "utf-8")
 
-    result = None
+result = None
 
-    # Since you were using your previous AT and then met a claims challenge,
-    # you should've already be in a context with the current signed-in user.
-    # Here we assume you somehow already have that account,
-    # or you could possibly get it like this:
-    accounts = app.get_accounts()
-    assert accounts
-    account = accounts[0]
+# Since you were using your previous AT and then met a claims challenge,
+# you should've already be in a context with the current signed-in user.
+# Here we assume you somehow already have that account,
+# or you could possibly get it like this:
+accounts = app.get_accounts()
+assert accounts
+account = accounts[0]
 
-    result = app.acquire_token_silent(scope, account=account, claims_challenge=claims_challenge)
-    if not result:
-        # Auth endpoint call for interactive login (you can use auth url helper)
-        auth_url = app.get_authorization_request_url(..., claims_challenge=claims_challenge)
-        # Make a request to this auth_url to get back authorization_code
-        result = app.acquire_token_by_authorization_code(..., claims_challenge=claims_challenge)
-    ```
+result = app.acquire_token_silent(scope, account=account, claims_challenge=claims_challenge)
+if not result:
+    # Auth endpoint call for interactive login (you can use auth url helper)
+    auth_url = app.get_authorization_request_url(..., claims_challenge=claims_challenge)
+    # Make a request to this auth_url to get back authorization_code
+    result = app.acquire_token_by_authorization_code(..., claims_challenge=claims_challenge)
+```
 
 - This new access token can now be used in the request to resource.
