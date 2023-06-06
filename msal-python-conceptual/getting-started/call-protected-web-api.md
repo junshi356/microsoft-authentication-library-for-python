@@ -1,3 +1,8 @@
+---
+title: Call a protected web API
+description: "Getting a token is not a goal per se. It's a necessary step to call a protected API. The token needs to be used to access a Web API."
+---
+
 # Call a protected web API
 
 ## Using the token

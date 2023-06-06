@@ -1,18 +1,20 @@
+---
+title: Username and password authentication
+description: "By design and policy, the username/password authentication works only for Work and school accounts, but not for Microsoft Accounts (MSA)."
+---
+
 # Username and password authentication
 
 The content below are applicable to [all MSAL libraries](/entra/msal), not just MSAL Python.
 
 ## Using username and password is not recommended
 
-In general Microsoft does not advise customers to use it as it's less secure than the other flows.
-For more information about why you want to avoid using this grant, you can,
-for instance read the following article which explains
-[why Microsoft is working to make passwords a thing of the past](https://news.microsoft.com/features/whats-solution-growing-problem-passwords-says-microsoft/).
+In general Microsoft does not advise customers to use it as it's less secure than the other flows. For more information about why you want to avoid using this grant you can read [why Microsoft is working to make passwords a thing of the past](https://news.microsoft.com/features/whats-solution-growing-problem-passwords-says-microsoft/).
 
 ## Constraints
 
 * By design and policy, the username/password authentication works only for Work and school accounts, but not for Microsoft Accounts (MSA).
-  See the [definition of these 2 types of accounts here](https://docs.microsoft.com/en-us/azure/active-directory/fundamentals/sign-up-organization).
+  See the [definition of these 2 types of accounts here](/azure/active-directory/fundamentals/sign-up-organization).
 * The Username/Password authentication is not compatible with conditional access and multi-factor authentication,
   because this is not an interactive flow, the Microsoft Identity platform does not have an opportunity to present a web-based dialog for the end user to interact.
   As a consequence, if your app runs in an Azure AD tenant where the tenant admin requires multi-factor authentication (many organizations do that), this flow will not work.
@@ -21,9 +23,9 @@ for instance read the following article which explains
   - or the tenant admin must have previously consented to all users in the tenant to use the application.
   - This means that:
      - either you as a developer have pressed the **Grant** button on the Azure portal for yourself, 
-     - or a tenant admin has pressed the **Grant/revoke admin consent for {tenant domain}** button in the **API permissions** tab of the registration for the application (See [Add permissions to access web APIs](https://docs.microsoft.com/en-us/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis))
-     - or you have provided a way for users to consent to the application (See [Requesting individual user consent](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent#requesting-individual-user-consent))
-     - or you have provided a way for the tenant admin to consent for the application (See [admin consent](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent#requesting-consent-for-an-entire-tenant))
+     - or a tenant admin has pressed the **Grant/revoke admin consent for {tenant domain}** button in the **API permissions** tab of the registration for the application (See [Add permissions to access web APIs](/azure/active-directory/develop/quickstart-configure-app-access-web-apis#add-permissions-to-access-web-apis))
+     - or you have provided a way for users to consent to the application (See [Requesting individual user consent](/azure/active-directory/develop/v2-permissions-and-consent#requesting-individual-user-consent))
+     - or you have provided a way for the tenant admin to consent for the application (See [admin consent](/azure/active-directory/develop/v2-permissions-and-consent#requesting-consent-for-an-entire-tenant))
 
 ## Recommendations
 

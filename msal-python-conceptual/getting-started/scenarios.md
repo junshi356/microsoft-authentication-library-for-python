@@ -1,3 +1,8 @@
+---
+title: Scenarios
+description: "MSAL Python can be used by applications to acquire tokens to access a protected API."
+---
+
 # Scenarios
 
 MSAL Python can be used by applications to acquire tokens to access a protected API. Tokens can be acquired by different **application types**: Desktop applications, Web applications, Web APIs, and applications running on devices that don't have a browser (such as IoT). In MSAL Python, applications are categorized as follows:

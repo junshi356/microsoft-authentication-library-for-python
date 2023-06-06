@@ -1,3 +1,0 @@
-# Admin consent
-
-Your app may declare any permissions it wants. For example, there are [Microsoft Graph permissions](https://docs.microsoft.com/en-us/graph/permissions-reference). Depends on your tenant's settings, some permissions require [consent from an administrator](https://docs.microsoft.com/en-us/azure/active-directory/develop/application-consent-experience). <sub>Most permissions in Microsoft tenant require admin consent. Follow these steps, if you are a [Microsoft employee looking to get your application admin consented in the Microsoft Production tenant](https://aka.ms/cseoaad).</sub>

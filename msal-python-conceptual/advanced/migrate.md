@@ -1,11 +1,11 @@
+---
+title: Migrate existing Refresh Tokens into MSAL Python
+description: "MSAL is not a low-level OAuth2 library. MSAL wraps and hides the concept of Refresh Token (RT) away from you."
+---
+
 # Migrate existing Refresh Tokens into MSAL Python
 
-MSAL is not a low-level OAuth2 library. MSAL actually wraps and hides the concept of Refresh Token (RT) away from you.
-So if you started your project with MSAL Python and following its
-[3-steps usage pattern](https://github.com/AzureAD/microsoft-authentication-library-for-python/blob/dev/README.md#usage-and-samples)
-(specifically, the step 2), you don't even need to know and care about where to store an RT, how to look it up, and when to update it.
-MSAL Python just automatically does all the hard work on token caching for you,
-and your end user will see minimal amount of sign-in prompt.
+MSAL is not a low-level OAuth2 library. MSAL wraps and hides the concept of Refresh Token (RT) away from you. So if you started your project with MSAL Python and following its [3-steps usage pattern](https://github.com/AzureAD/microsoft-authentication-library-for-python/blob/dev/README.md#usage-and-samples) (specifically, the step 2), you don't even need to know and care about where to store an RT, how to look it up, and when to update it. MSAL Python just automatically does all the hard work on token caching for you, and your end user will see minimal amount of sign-in prompt.
 
 But if your existing project was using other OAuth2 libraries (including but not limited to ADAL Python) and your RTs were stored there, and now you want to migrate your project to MSAL Python, you may also want to migrate those RTs into MSAL Python so that your existing end users would not need to sign in again.
 

@@ -1,17 +1,22 @@
+---
+title: Why use MSAL Python?
+description: "MSAL Python (Microsoft Authentication Library for Python) enables developers to acquire tokens in order to call secured Web APIs**. These Web APIs can be the Microsoft Graph, other Microsoft APIS, 3rd party Web APIs, or your own Web API."
+---
+
 # Why use MSAL Python?
 
-MSAL Python ([Microsoft Authentication Library for Python](https://github.com/AzureAD/microsoft-authentication-library-for-python)) enables developers to **acquire [tokens](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-dev-glossary#security-token) in order to call secured Web APIs**. These Web APIs can be the Microsoft Graph, other Microsoft APIS, 3rd party Web APIs, or your own Web API.
+MSAL Python ([Microsoft Authentication Library for Python](https://github.com/AzureAD/microsoft-authentication-library-for-python)) enables developers to [acquire tokens](./acquiring-tokens.md) in order to call secured Web APIs. These Web APIs can be Microsoft Graph, other Microsoft APIS, 3rd party Web APIs, or your own Web API.
 
 ## MSAL Python Supports multiple application architectures
 
 MSAL Python supports all the possible application topologies including:
 
-- [native client](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-dev-glossary#native-client)  (desktop applications) calling the Microsoft Graph in the name of the user,
-- daemons/services or [web clients](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-dev-glossary#web-client)  (Web Apps/ Web APIs) calling the Microsoft Graph in the name of a user, or without a user.
+- [native client](/azure/active-directory/develop/active-directory-dev-glossary#native-client)  (desktop applications) calling the Microsoft Graph in the name of the user,
+- daemons/services or [web clients](/azure/active-directory/develop/active-directory-dev-glossary#web-client)  (Web Apps/ Web APIs) calling the Microsoft Graph in the name of a user, or without a user.
 
 With the exception of:
 
-- [User-agent based client](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-dev-glossary#user-agent-based-client) which is only supported in JavaScript
+- [User-agent based client](/azure/active-directory/develop/active-directory-dev-glossary#user-agent-based-client) which is only supported in JavaScript
 
 For details about the supported scenarios see [Scenarios](https://github.com/AzureAD/microsoft-authentication-library-for-python/wiki/Scenarios).
 
@@ -29,4 +34,4 @@ It also adds value by:
 
 MSAL Python is used to acquire tokens. It's not used to protect a Web API. If you are interested in protecting a Web API with Azure AD, you might want to check out:
 
-- [Validating tokens manually](https://docs.microsoft.com/en-us/azure/active-directory/develop/access-tokens#validating-tokens)
+- [Validating tokens manually](/azure/active-directory/develop/access-tokens#validating-tokens)
