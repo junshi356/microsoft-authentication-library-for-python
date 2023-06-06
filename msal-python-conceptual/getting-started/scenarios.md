@@ -1,4 +1,4 @@
-### Introduction
+# Scenarios
 
 MSAL Python can be used by applications to acquire tokens to access a protected API. Tokens can be acquired by different **application types**: Desktop applications, Web applications, Web APIs, and applications running on devices that don't have a browser (such as IoT). In MSAL Python, applications are categorized as follows:
 
@@ -12,10 +12,10 @@ MSAL Python can be used in applications running on different operating systems (
 
 Here are the key scenarios supported by MSAL Python. You can read the detailed explanations with MSAL Python code usage by following the links.
 
-- [Web application that signs in users](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-web-app-sign-user-overview)
-- [Web Application signing in a user and calling a Web API in the name of the user](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-web-app-call-api-overview) (Note: MSAL only helps the Web Application to sign in and obtain tokens. To [protect a web API](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-protected-web-api-overview), you will need other libraries.)
-- [Desktop application calling a Web API in the name of the signed-in user](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-desktop-overview)
-- [Desktop/service daemon application calling Web API without a user](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-daemon-overview)
-- [Application without a browser, or IOT application calling an API in the name of the user](https://docs.microsoft.com/en-us/azure/active-directory/develop/scenario-desktop-acquire-token?tabs=python#command-line-tool-without-web-browser)
+- [Web application that signs in users](/azure/active-directory/develop/scenario-web-app-sign-user-overview)
+- [Web Application signing in a user and calling a Web API in the name of the user](/azure/active-directory/develop/scenario-web-app-call-api-overview) (Note: MSAL only helps the Web Application to sign in and obtain tokens. To [protect a web API](/azure/active-directory/develop/scenario-protected-web-api-overview), you will need other libraries.)
+- [Desktop application calling a Web API in the name of the signed-in user](/azure/active-directory/develop/scenario-desktop-overview)
+- [Desktop/service daemon application calling Web API without a user](/azure/active-directory/develop/scenario-daemon-overview)
+- [Application without a browser, or IOT application calling an API in the name of the user](/azure/active-directory/develop/scenario-desktop-acquire-token?tabs=python#command-line-tool-without-web-browser)
 
-Can't find the scenario you are looking for? Check out the [supported scenarios and platforms](https://docs.microsoft.com/en-us/azure/active-directory/develop/authentication-flows-app-scenarios#scenarios-and-supported-platforms-and-languages) across MSALs.
+Can't find the scenario you are looking for? Check out the [supported scenarios and platforms](/azure/active-directory/develop/authentication-flows-app-scenarios#scenarios-and-supported-platforms-and-languages) across MSALs.

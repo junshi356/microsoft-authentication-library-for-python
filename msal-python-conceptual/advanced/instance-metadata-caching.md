@@ -1,14 +1,9 @@
-Instance Metadata Caching
-=========================
+# Instance Metadata Caching
 
-    "I feel the need - the need for speed!" -- Quoted from the movie Top Gun
+Every developer wants their program to run faster. In this article, we are going to show you how you can add a one-liner to make your MSAL Python powered app to acquire a token roughly 1.5x to 2x faster!
 
-Every developer wants his/her program runs faster.
-In this essay, we are going to show you how you can add a one-liner to make your MSAL Python powered app to acquire a token roughly 1.5x to 2x faster!
+## Preparation
 
-
-Preparation
------------
 1. First let's pick an existing sample script to demonstrate this experiment.
 We choose the [username password sample](https://github.com/AzureAD/microsoft-authentication-library-for-python/blob/1.0.0/sample/username_password_sample.py),
 because it would require no user interaction,
@@ -36,13 +31,11 @@ so that our time measurement would not be affected by slow human interaction.
    [these two lines](https://github.com/AzureAD/microsoft-authentication-library-for-python/blob/1.0.0/sample/username_password_sample.py#L31-L32)
    to enable logging for you to see what happens under the hood.
 
-
-Before
-------
+## Before
 
 Now run it several times. You will like see an output like this:
 
-   ```
+   ```bash
    $ python username_password_sample.py config.json
    It took 0.9160797595977783 second(s)
 
@@ -55,9 +48,7 @@ Now run it several times. You will like see an output like this:
 
    So it took roughly 0.8+ seconds to acquire a token.
 
-
-Actual Magic
-------------
+## Actual Magic
 
 Now let's have some fun.
 
@@ -67,13 +58,11 @@ and then add this line at the very beginning of your sample:
 import requests_cache; requests_cache.install_cache()
 ```
 
-
-After
------
+## After
 
 Now run it several times. You will like see an output like this:
 
-   ```
+   ```bash
    $ python username_password_sample.py config.json
    It took 0.41900205612182617 second(s)
 
@@ -86,9 +75,7 @@ Now run it several times. You will like see an output like this:
 
 So it took roughly 0.4+ seconds to acquire a token.
 
-
-What is going on?
------------------
+## What is going on?
 
 Before acquiring a token, MSAL would need to hit several discovery endpoints to find some metadata.
 These metadata are infrequently changed, so they can be cached and reused.
@@ -106,9 +93,7 @@ dispite running as a new process every time.
 In fact, this trick does not just help MSAL Python,
 it improves all other cache-able HTTP traffic of your app.
 
-
-Conclusion
-----------
+## Conclusion
 
 Now you have it, a whopping 1.5x to 2x performance gain by only one single line of code.
 And it is universally applicable to all your apps utilizing HTTP.

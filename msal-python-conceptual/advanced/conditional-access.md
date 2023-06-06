@@ -1,21 +1,21 @@
-## Conditional Access and Claims Challenges
+# Conditional access and claims challenges
 
-### Background
+## Background
 
 When getting tokens silently, your application may receive errors when a
 [Conditional Access claims challenge](https://docs.microsoft.com/en-us/azure/active-directory/develop/conditional-access-dev-guide)
 such as MFA policy is required by an API you're trying to access.
 
 The pattern for handling this error is to interactively acquire a token using MSAL. Interactively acquiring a token prompts the user and gives them the opportunity to satisfy the required Conditional Access policy.
-> Note that there are certain conditional access policies that do not require user interaction to comply with the policy. In such cases, it is recommended to use the acquire_token_silent method to handle the claims challenge that is returned and avoid prompting user interaction.
 
+> [!NOTE]
+> There are certain conditional access policies that do not require user interaction to comply with the policy. In such cases, it is recommended to use the acquire_token_silent method to handle the claims challenge that is returned and avoid prompting user interaction.
 
 In certain cases when calling an API requiring Conditional Access, you can receive a claims challenge in the error from the API. For instance if the Conditional Access policy is to have a managed device (Intune) the error will be something like
 [AADSTS53000: Your device is required to be managed to access this resource](https://docs.microsoft.com/en-us/azure/active-directory/develop/reference-aadsts-error-codes)
 or something similar. In this case, you can pass the claims in the acquire token call so that the user is prompted to satisfy the appropriate policy.
 
-
-### Handling Claim Challenge in MSAL Python
+## Handling Claim Challenge in MSAL Python
 
 When calling an API requiring Conditional Access, your application will need to handle claim challenge error.
 This will appear as
@@ -34,7 +34,7 @@ error="insufficient_claims",
 claims="returned_claims"
 ```
 
-- Clients need to extract the claims and then pass it to acquire_token_by_* method. If the claims value returned from the resource is base64-encoded, it needs to be decoded before calling MSAL. MSAL acquire_token methods accept claims as a json string. This is an example of how claims returned from the resource provider can be handled using authorization code flow.
+Clients need to extract the claims and then pass it to acquire_token_by_* method. If the claims value returned from the resource is base64-encoded, it needs to be decoded before calling MSAL. MSAL acquire_token methods accept claims as a json string. This is an example of how claims returned from the resource provider can be handled using authorization code flow.
 
     ``` Python
     claims_challenge = "claims returned from resource provider"

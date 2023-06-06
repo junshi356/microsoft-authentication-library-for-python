@@ -1,4 +1,6 @@
-The content below are applicable to [all ADAL/MSAL libraries](https://github.com/AzureAD/microsoft-authentication-library-for-python/wiki/Microsoft-Authentication-Client-Libraries), not just MSAL Python.
+# Username and password authentication
+
+The content below are applicable to [all MSAL libraries](/entra/msal), not just MSAL Python.
 
 ## Using username and password is not recommended
 
@@ -23,7 +25,6 @@ for instance read the following article which explains
      - or you have provided a way for users to consent to the application (See [Requesting individual user consent](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent#requesting-individual-user-consent))
      - or you have provided a way for the tenant admin to consent for the application (See [admin consent](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-permissions-and-consent#requesting-consent-for-an-entire-tenant))
 
-
 ## Recommendations
 
 Even if you choose to use Username Password Authentication, you should not persist end user's password. After the initial username password authentication succeeded, MSAL's token cache would kick in, and cache the refresh token (RT) automatically. From now on, your app can just call MSAL's [`acquire_token_silent()`](https://msal-python.readthedocs.io/en/latest/#msal.ClientApplication.acquire_token_silent) to obtain new access token without username and password.
@@ -34,5 +35,3 @@ Microsoft identity platform supports username password flow on public client app
 So you would need to configure your app in this way. The follow screenshot is the panel from Azure Portal.
 
 ![Public App Setup](https://user-images.githubusercontent.com/821550/76988648-4499c280-6902-11ea-8be5-00292624a274.png)
-
-

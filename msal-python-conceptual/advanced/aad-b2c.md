@@ -1,6 +1,6 @@
-## Use MSAL Python to work with B2C
+# Use MSAL Python to work with B2C
 
-### Summary
+## Summary
 
 You can use MSAL Python to sign-in users with social identities, acquire token, customize the sign-in experience, by using [Azure AD B2C](https://aka.ms/aadb2c).
 AAD B2C is built around the notion of
@@ -23,8 +23,7 @@ In MSAL Python, specifying a user flow translates to providing an authority.
 
 More details of these summary are described below.
 
-
-### Authority for a B2C tenant and user flow
+## Authority for a B2C tenant and user flow
 
 The authority to use is `https://{tenant_name}.b2clogin.com/{tenant_name}.onmicrosoft.com/{user_flow}` where:
 
@@ -40,14 +39,13 @@ app = msal.PublicClientApplication(  # Or ConfidentialClientApplication(...)
     ...)
 ```
 
-
+> [!NOTE]
 > You may also use your own customized domain name, so that your authority would look like
 > "https://**contoso.com**/{tenant_name}.onmicrosoft.com/{user_flow}".
-
 > Under the hood, MSAL Python will automatically adjust the validate_authority check behavior for all B2C domains.
 > So that you do not have to do anything extra.
 
-### Acquiring a token
+## Acquiring a token
 
 Acquiring a token for an Azure AD B2C protected API, based on the user flow already provided as part of the authority,
 are exactly the same as what you would do in non-B2C scenario.
@@ -66,7 +64,7 @@ In practice, you will still typically reuse same MSAL app and its token cache fo
 and only create new one-time MSAL app when invoking EditProfile or ResetPassword user flows,
 whose returned token (if any) would not be useful anyway.
 
-### Example of EditProfile and ResetPassword user flows
+## Example of EditProfile and ResetPassword user flows
 
 EditProfile and ResetPassword user flows are:
 
@@ -87,8 +85,7 @@ You would just need to update your HTML template to include new link to, for exa
 <a href='{{_build_auth_url(authority=config["B2C_PROFILE_AUTHORITY"])}}'>Edit Profile</a>
 ```
 
-
-### Resource Owner Password Credentials (ROPC) With B2C
+## Resource Owner Password Credentials (ROPC) With B2C
 
 There is still no API difference here between B2C and non-B2C scenario.
 The following content serves as a mini-tutorial.
@@ -102,10 +99,9 @@ would work as usual.
 * Limitations: This **only works for local accounts** (where you register with B2C using an email or username). This flow does not work if federating to any of the IdPs supported by B2C (Facebook, Google, etc...).
 * Normal caveats on ROPC flow still applies. Please see this [wiki page](https://github.com/AzureAD/microsoft-authentication-library-for-python/wiki/Username-Password-Authentication).
 
-
 ## Caching with B2C in MSAL Python
 
-### Known issue with Azure B2C:
+### Known issue
 
 MSAL Python token cache usage pattern starts with querying all existing accounts by
 [`get_accounts(...)`, which supports a `username` parameter as filter](https://msal-python.readthedocs.io/en/latest/#msal.ClientApplication.get_accounts).
@@ -122,8 +118,7 @@ because `"john.doe@contoso.com"` won't match `""`.
 The workaround is to customize your B2C user flow to populate and return a `preferred_username` claim,
 or simply call your `app.get_accounts()` without a specific username parameter.
 
-
-## Samples illustrating acquiring tokens interactively with MSAL Python for B2C applications
+## Samples
 
 Sample | Platform | Description
 ------ | -------- | -----------

@@ -1,3 +1,5 @@
+# Logging
+
 Logging in MSAL Python is designed to use the standard Python logging mechanism, so all your previous knowledge of Python logging still applies to MSAL Python.
 
 * By default, the logging in any Python script is turned off. If you want to enable debug logging for ALL modules in your entire Python script, you use `logging.basicConfig(level=logging.DEBUG)`.

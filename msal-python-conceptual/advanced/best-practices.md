@@ -1,4 +1,4 @@
-# Best Practices for a robust enterprise ready application
+# Best practices for a robust enterprise ready application
 
 You've seen that with MSAL Python you can quite simply acquire a token for a protected Web API. You also don't have to handle refreshing tokens yourself.
 

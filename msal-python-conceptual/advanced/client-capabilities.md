@@ -1,3 +1,5 @@
+# Client capabilities
+
 The Azure AD service provides features and policies which are applicable in certain scenarios, such as [conditional access](Conditional-Access-and-Claims-Challenges) policies. The Azure AD service needs to determine if a client application is participating in the feature or capable of handling the policy, for the end to end scenario to work.
 
 - The **client capabilities** parameter in the application object allows client applications to indicate their compliance with a scenario and readiness to handle the policies or features, so that Azure AD can apply them for the client. 
