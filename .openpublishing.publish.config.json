@@ -36,19 +36,6 @@
           "target_framework": "net45",
           "version": "latest"
         }
-      ],
-      "JoinTOCPlugin": [
-        {
-          "ReferenceTOC": "docs-ref-autogen/toc.yml",
-          "ReferenceTOCUrl": "/python/api/msal_py_toc/toc.json?view=msal-py-latest",
-          "ConceptualTOC": "msal-python-conceptual/toc.yml",
-          "ConceptualTOCUrl": "/entra/msal/python/toc.json",
-          "ContainerPageMetadata": {
-            "langs": [
-              "python"
-            ]
-          }
-        }
       ]
     },
     {
@@ -77,6 +64,19 @@
   "notification_subscribers": [],
   "sync_notification_subscribers": [],
   "branches_to_filter": [],
+  "JoinTOCPlugin": [
+    {
+      "ReferenceTOC": "python/docs-ref-autogen/toc.yml",
+      "ReferenceTOCUrl": "/python/api/msal_py_toc/toc.json?view=msal-py-latest",
+      "ConceptualTOC": "msal-python-conceptual/toc.yml",
+      "ConceptualTOCUrl": "/entra/msal/python/toc.json",
+      "ContainerPageMetadata": {
+        "langs": [
+          "python"
+        ]
+      }
+    }
+  ],
   "need_preview_pull_request": true,
   "dependent_repositories": [
     {
@@ -89,5 +89,5 @@
   "branch_target_mapping": {},
   "skip_source_output_uploading": false,
   "contribution_branch_mappings": {},
-  "need_generate_pdf_url_template": false
+  "need_generate_pdf_url_template": true
 }
