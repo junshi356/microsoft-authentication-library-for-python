@@ -36,8 +36,6 @@
     href: advanced/client-credentials.md
   - name: Handle SameSite cookie changes in Chrome
     href: /azure/active-directory/develop/howto-handle-samesite-cookie-changes-chrome-browser?tabs=python
-  - name: Admin consent
-    href: advanced/admin-constent.md
   - name: Migrate to MSAL Python
     href: advanced/migrate.md
   - name: Logging
