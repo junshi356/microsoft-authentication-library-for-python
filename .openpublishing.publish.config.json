@@ -66,6 +66,7 @@
   "branches_to_filter": [],
   "JoinTOCPlugin": [
     {
+      "TopLevelTOC": "python/docs-ref-mapping/ref-toc.yml",
       "ReferenceTOC": "python/docs-ref-autogen/toc.yml",
       "ReferenceTOCUrl": "/python/api/msal_py_toc/toc.json?view=msal-py-latest",
       "ConceptualTOC": "msal-python-conceptual/toc.yml",
