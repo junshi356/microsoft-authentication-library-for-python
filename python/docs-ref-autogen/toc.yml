@@ -3,115 +3,29 @@
     uid: project-msal
   - items:
     - name: Overview
-      uid: msal
+      uid: msal.application
+    - name: msal.application.ClientApplication
+      uid: msal.application.ClientApplication
+    - name: msal.application.ConfidentialClientApplication
+      uid: msal.application.ConfidentialClientApplication
+    - name: msal.application.PublicClientApplication
+      uid: msal.application.PublicClientApplication
+    name: msal.application
+  - items:
+    - name: Overview
+      uid: msal.token_cache
+    - name: msal.token_cache.SerializableTokenCache
+      uid: msal.token_cache.SerializableTokenCache
     - items:
       - name: Overview
-        uid: msal.application
-      - name: msal.application.ClientApplication
-        uid: msal.application.ClientApplication
-      - name: msal.application.ConfidentialClientApplication
-        uid: msal.application.ConfidentialClientApplication
-      - name: msal.application.PublicClientApplication
-        uid: msal.application.PublicClientApplication
-      name: msal.application
-    - items:
-      - name: Overview
-        uid: msal.authority
-      - name: msal.authority.Authority
-        uid: msal.authority.Authority
-      - name: msal.authority.AuthorityBuilder
-        uid: msal.authority.AuthorityBuilder
-      name: msal.authority
-    - name: msal.cloudshell
-      uid: msal.cloudshell
-    - items:
-      - name: Overview
-        uid: msal.exceptions
-      - name: msal.exceptions.MsalError
-        uid: msal.exceptions.MsalError
-      - name: msal.exceptions.MsalServiceError
-        uid: msal.exceptions.MsalServiceError
-      name: msal.exceptions
-    - name: msal.individual_cache
-      uid: msal.individual_cache
-    - items:
-      - name: Overview
-        uid: msal.mex
-      - name: msal.mex.Mex
-        uid: msal.mex.Mex
-      name: msal.mex
-    - items:
-      - name: Overview
-        uid: msal.oauth2cli
-      - items:
-        - name: Overview
-          uid: msal.oauth2cli.assertion
-        - name: msal.oauth2cli.assertion.AssertionCreator
-          uid: msal.oauth2cli.assertion.AssertionCreator
-        - name: msal.oauth2cli.assertion.AutoRefresher
-          uid: msal.oauth2cli.assertion.AutoRefresher
-        - name: msal.oauth2cli.assertion.JwtAssertionCreator
-          uid: msal.oauth2cli.assertion.JwtAssertionCreator
-        name: msal.oauth2cli.assertion
-      - items:
-        - name: Overview
-          uid: msal.oauth2cli.authcode
-        - name: msal.oauth2cli.authcode.AuthCodeReceiver
-          uid: msal.oauth2cli.authcode.AuthCodeReceiver
-        name: msal.oauth2cli.authcode
-      - items:
-        - name: Overview
-          uid: msal.oauth2cli.http
-        - name: msal.oauth2cli.http.HttpClient
-          uid: msal.oauth2cli.http.HttpClient
-        - name: msal.oauth2cli.http.Response
-          uid: msal.oauth2cli.http.Response
-        name: msal.oauth2cli.http
-      - items:
-        - name: Overview
-          uid: msal.oauth2cli.oauth2
-        - name: msal.oauth2cli.oauth2.BaseClient
-          uid: msal.oauth2cli.oauth2.BaseClient
-        - name: msal.oauth2cli.oauth2.Client
-          uid: msal.oauth2cli.oauth2.Client
-        name: msal.oauth2cli.oauth2
-      - items:
-        - name: Overview
-          uid: msal.oauth2cli.oidc
-        - name: msal.oauth2cli.oidc.Client
-          uid: msal.oauth2cli.oidc.Client
-        - name: msal.oauth2cli.oidc.Prompt
-          uid: msal.oauth2cli.oidc.Prompt
-        name: msal.oauth2cli.oidc
-      name: msal.oauth2cli
-    - name: msal.region
-      uid: msal.region
-    - name: msal.telemetry
-      uid: msal.telemetry
-    - items:
-      - name: Overview
-        uid: msal.throttled_http_client
-      - name: msal.throttled_http_client.ThrottledHttpClient
-        uid: msal.throttled_http_client.ThrottledHttpClient
-      name: msal.throttled_http_client
-    - items:
-      - name: Overview
-        uid: msal.token_cache
-      - name: msal.token_cache.SerializableTokenCache
-        uid: msal.token_cache.SerializableTokenCache
-      - items:
-        - name: Overview
-          uid: msal.token_cache.TokenCache
-        - name: msal.token_cache.TokenCache.AuthorityType
-          uid: msal.token_cache.TokenCache.AuthorityType
-        - name: msal.token_cache.TokenCache.CredentialType
-          uid: msal.token_cache.TokenCache.CredentialType
-        name: msal.token_cache.TokenCache
-      name: msal.token_cache
-    - name: msal.wstrust_request
-      uid: msal.wstrust_request
-    - name: msal.wstrust_response
-      uid: msal.wstrust_response
-    name: msal
+        uid: msal.token_cache.TokenCache
+      - name: msal.token_cache.TokenCache.AuthorityType
+        uid: msal.token_cache.TokenCache.AuthorityType
+      - name: msal.token_cache.TokenCache.CredentialType
+        uid: msal.token_cache.TokenCache.CredentialType
+      name: msal.token_cache.TokenCache
+    name: msal.token_cache
+  - name: msal
+    uid: msal
   name: msal
 

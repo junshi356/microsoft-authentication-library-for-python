@@ -5,3 +5,6 @@ fullName: msal
 type: distribution
 packages:
 - msal
+modules:
+- msal.application
+- msal.token_cache

@@ -18,11 +18,8 @@ constructor:
 methods:
 - uid: msal.token_cache.TokenCache.add
   name: add
-  summary: 'Handle a token obtaining event, and add tokens into cache.
-
-
-    Known side effects: This function modifies the input event in place.'
-  signature: add(event, now=None)
+  summary: Handle a token obtaining event, and add tokens into cache.
+  signature: add()
   parameters:
   - name: event
     isRequired: true
