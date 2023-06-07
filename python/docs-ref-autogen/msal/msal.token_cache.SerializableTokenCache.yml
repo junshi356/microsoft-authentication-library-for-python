@@ -31,10 +31,6 @@ variables:
 methods:
 - uid: msal.token_cache.SerializableTokenCache.add
   name: add
-  summary: 'Handle a token obtaining event, and add tokens into cache.
-
-
-    Known side effects: This function modifies the input event in place.'
   signature: add(event, **kwargs)
   parameters:
   - name: event
@@ -42,7 +38,7 @@ methods:
 - uid: msal.token_cache.SerializableTokenCache.deserialize
   name: deserialize
   summary: Deserialize the cache from a state previously obtained by serialize()
-  signature: deserialize(state)
+  signature: 'deserialize(state: str | None) -> None'
   parameters:
   - name: state
     isRequired: true
@@ -59,7 +55,7 @@ methods:
 - uid: msal.token_cache.SerializableTokenCache.serialize
   name: serialize
   summary: Serialize the current cache state into a string.
-  signature: serialize()
+  signature: serialize() -> str
 attributes:
 - uid: msal.token_cache.SerializableTokenCache.has_state_changed
   name: has_state_changed
