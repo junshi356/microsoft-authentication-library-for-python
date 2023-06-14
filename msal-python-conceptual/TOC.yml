@@ -18,9 +18,9 @@
   - name: Migrate to MSAL Python
     href: /azure/active-directory/develop/migrate-python-adal-msal
   - name: Logging
-    href: /azure/active-directory/develop/msal-logging?tabs=python
+    href: /azure/active-directory/develop/msal-logging-python
   - name: Handle errors and exceptions
-    href: /azure/active-directory/develop/msal-handling-exceptions?tabs=python)
+    href: /azure/active-directory/develop/msal-error-handling-python
   - name: Conditional access
     href: advanced/conditional-access.md
   - name: Token cache serialization
@@ -31,12 +31,13 @@
     href: /azure/active-directory/develop/msal-python-adfs-support
   - name: National clouds
     href: /azure/active-directory/develop/msal-national-cloud?tabs=python
-  - name: advanced/username-password-authentication.md
+  - name: Username and password authentication
+    href: advanced/username-password-authentication.md
   - name: How to generate secret and/or certificate for Confidential Client
     href: advanced/client-credentials.md
   - name: Handle SameSite cookie changes in Chrome
     href: /azure/active-directory/develop/howto-handle-samesite-cookie-changes-chrome-browser?tabs=python
-  - name: Migrate to MSAL Python
+  - name: Migrate existing refresh tokens into MSAL Python
     href: advanced/migrate.md
   - name: Logging
     href: advanced/logging.md
