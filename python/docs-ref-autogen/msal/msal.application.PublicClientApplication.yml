@@ -94,10 +94,10 @@ methods:
 
       More information on possible values
 
-      [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow#request-an-authorization-code)
+      [here](/azure/active-directory/develop/v2-oauth2-auth-code-flow#request-an-authorization-code)
       and
 
-      [here](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-oapx/86fb452d-e34a-494e-ac61-e526e263b6d8).'
+      [here](/openspecs/windows_protocols/ms-oapx/86fb452d-e34a-494e-ac61-e526e263b6d8).'
     defaultValue: None
   - name: claims_challenge
     description: 'The claims_challenge parameter requests specific claims requested
