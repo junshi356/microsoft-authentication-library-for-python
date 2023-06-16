@@ -75,6 +75,9 @@
       }
     },
     "template": [],
-    "dest": "msal-python-conceptual"
+    "dest": "msal-python-conceptual",
+    "xref": [
+      "../xrefmap.yml"
+    ]
   }
 }
