@@ -1,4 +1,5 @@
 - name: Getting started
+  href: index.md
   items:
   - name: Why use MSAL Python
     href: getting-started/why-use-msal-python.md
