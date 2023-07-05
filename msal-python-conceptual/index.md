@@ -28,7 +28,7 @@ Before using MSAL Python, make sure to [register your application](/azure/active
 
 Acquiring tokens with MSAL Python follows a three-step pattern. There will be some variations for different flows. If you would like to see them in action, download our [samples](https://github.com/AzureAD/microsoft-authentication-library-for-python/tree/dev/sample).
 
-1. MSAL relies on a clean separation between [public client and confidential client applications](https://tools.ietf.org/html/rfc6749#section-2.1). Therefore, create either a [`PublicClientApplication`](xref:msal.application.PublicClientApplication) or a [`ConfidentialClientApplication`](msal.application.ConfidentialClientApplication) instance and reuse it during the lifecycle of your application. For example, for a public client application, the initalization code might look like this:
+1. MSAL relies on a clean separation between [public client and confidential client applications](https://tools.ietf.org/html/rfc6749#section-2.1). Therefore, create either a [`PublicClientApplication`](xref:msal.application.PublicClientApplication) or a [`ConfidentialClientApplication`](xref:msal.application.ConfidentialClientApplication) instance and reuse it during the lifecycle of your application. For example, for a public client application, the initalization code might look like this:
 
    ```python
    from msal import PublicClientApplication
