@@ -19,7 +19,7 @@ The approach to acquiring a token is different depending on the application type
 
 Public client applications cannot securely store a secret and can _only_ authenticate the user that is interacting with the product. MSAL Python exposes most of the token acquisition logic for public applications through [`PublicClientApplication`](xref:msal.application.PublicClientApplication). Using this class enables developers to:
 
-- Acquire tokens **as the user** with the help of an [authorization code](/azure/active-directory/develop/scenario-desktop-acquire-token?tabs=python#acquiring-a-token-interactively) after letting the user sign-in through the authorization request URL.
+- Acquire tokens **as the user** with the help of an [interactive flow](/azure/active-directory/develop/scenario-desktop-acquire-token?tabs=python#acquiring-a-token-interactively) after letting the user sign-in through the authorization request URL.
 - It's also possible (but not recommended) to get a token with a [username and password](/azure/active-directory/develop/scenario-desktop-acquire-token?tabs=python#username--password).
 - For applications running on devices which don't have a web browser, it's possible to acquire a token through the [device code flow](/azure/active-directory/develop/scenario-desktop-acquire-token?tabs=python#command-line-tool-without-web-browser), which provides the user with a URL and a code. The user goes to a web browser on another device, enters the code and signs in. On successful authentication, Azure AD will return a token to the browser-less device.
 
