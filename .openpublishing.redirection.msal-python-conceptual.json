@@ -1,8 +1,8 @@
 {
   "redirections": [
     {
-      "source_path_from_root": "msal-python-conceptual/overview-msal",
-      "redirect_url": "msal-python-conceptual/index.md",
+      "source_path_from_root": "/msal-python-conceptual/overview-msal",
+      "redirect_url": "/msal-python-conceptual/index",
       "redirect_document_id": true
     }
   ]
