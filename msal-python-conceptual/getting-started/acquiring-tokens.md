@@ -27,7 +27,7 @@ Public client applications cannot securely store a secret and can _only_ authent
 
 Confidential client applications can securely store a secret and can authenticate both on behalf of an application as well as on behalf of a given user. With MSAL Python, developers can use [`ConfidentialClientApplication`](xref:msal.application.ConfidentialClientApplication) to access confidential client application capabilities, such as:
 
-- Acquire token **as the application itself** using [client credentials](/azure/active-directory/develop/scenario-daemon-acquire-token?tabs=python#acquiretokenforclient-api), and not for a user. For example, this can be used in applications which that users in batches and not one particular user, such as syncing tools.
+- Acquire token **as the application itself** using [client credentials](/azure/active-directory/develop/scenario-daemon-acquire-token?tabs=python#acquiretokenforclient-api), and not for a user. For example, this can be used in applications which process users in batches and not one particular user, such as syncing tools.
 - In the case of web Apps or web APIs **calling another downstream Web API in the name of the user**, use the [On Behalf Of flow](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow) to acquire a token based on a user assertion (e.g., SAML, JWT).
 - **For Web apps authenticating in the name of a user**, acquire tokens through [authorization code](/azure/active-directory/develop/scenario-web-app-call-api-acquire-token?tabs=python) after letting the user sign-in through the authorization request URL. This is typically the mechanism used by an application which lets the user sign-in using Open ID Connect but then wants to access Web APIs for this particular user.
 
