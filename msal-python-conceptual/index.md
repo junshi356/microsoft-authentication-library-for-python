@@ -81,7 +81,7 @@ MSAL Python can be used by applications to acquire tokens to access protected AP
 - **Public client applications (desktop and mobile)**. These types of apps cannot store app secrets securely.
 - **Confidential client applications (web apps, web APIs, and daemon applications)**. These type of apps securely store a secret registered with Azure AD.
 
-Learn more about instantiating and configuring the above in the [Client applications](./client-applications.md) topic.
+Learn more about instantiating and configuring the above in the [Client applications](./getting-started/client-applications.md) topic.
 
 MSAL Python supports acquiring tokens either in the name of a user or in the name of the application itself (without a user). In the latter case, a confidential client application must be used.
 
