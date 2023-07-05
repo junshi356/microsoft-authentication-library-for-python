@@ -35,4 +35,4 @@ Confidential client applications can securely store a secret and can authenticat
 
 Both public and confidential client applications support token caching, handled direclt by MSAL Python. Applications should try to get a token from the cache first before relying on any other means. Take a look at the [recommended token acquisition pattern](/azure/active-directory/develop/scenario-desktop-acquire-token?tabs=python) to learn more.
 
-To be able to use the cache, the developers will need to configure the [token cache serialization](/azure/active-directory/develop/msal-python-token-cache-serialization) logic.
+To be able to persist the cache, the developers will need to configure the [token cache serialization](/azure/active-directory/develop/msal-python-token-cache-serialization) logic.
