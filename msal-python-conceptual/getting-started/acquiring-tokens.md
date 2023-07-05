@@ -5,7 +5,7 @@ description: "There are many ways of acquiring a token. Some require user intera
 
 # Acquiring tokens
 
-As explained in [MSAL Python usage scenarios](./scenarios.md), there are many ways of acquiring a token. Some require user interaction through a web browser, while others don't require any user interaction at all.
+As explained in [MSAL Python usage scenarios](../index.md#usage-scenarios), there are many ways of acquiring a token. Some require user interaction through a web browser, while others don't require any user interaction at all.
 
 ## Prerequisites
 

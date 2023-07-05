@@ -73,3 +73,26 @@ Acquiring tokens with MSAL Python follows this 3-step pattern. This is the high 
        print(result.get("error_description"))
        print(result.get("correlation_id"))  # You may need this when reporting a bug
    ```
+
+# Usage scenarios
+
+MSAL Python can be used by applications to acquire tokens to access protected APIs. Tokens can be acquired by different **application types**: desktop applications, web applications, web APIs, and applications running on devices that don't have a browser (such as IoT devices). In MSAL Python, applications are categorized as follows:
+
+- **Public client applications (desktop and mobile)**. These types of apps cannot store app secrets securely.
+- **Confidential client applications (web apps, web APIs, and daemon applications)**. These type of apps securely store a secret registered with Azure AD.
+
+Learn more about instantiating and configuring the above in the [Client applications](./client-applications.md) topic.
+
+MSAL Python supports acquiring tokens either in the name of a user or in the name of the application itself (without a user). In the latter case, a confidential client application must be used.
+
+MSAL Python can be used in applications running on different operating systems (Windows, Linux, macOS).
+
+Key scenarios supported by MSAL Python:
+
+- [Web application that signs in users](/azure/active-directory/develop/scenario-web-app-sign-user-overview)
+- [Web Application signing in a user and calling a Web API in the name of the user](/azure/active-directory/develop/scenario-web-app-call-api-overview) (note that MSAL only helps the web application to sign in and obtain tokens. To [protect a web API](/azure/active-directory/develop/scenario-protected-web-api-overview), you will need other libraries).
+- [Desktop application calling a Web API in the name of the signed-in user](/azure/active-directory/develop/scenario-desktop-overview)
+- [Desktop/service daemon application calling Web API without a user](/azure/active-directory/develop/scenario-daemon-overview)
+- [Application without a browser, or IOT application calling an API in the name of the user](/azure/active-directory/develop/scenario-desktop-acquire-token?tabs=python#command-line-tool-without-web-browser)
+
+Can't find the scenario you are looking for? Check out the [supported scenarios and platforms](/azure/active-directory/develop/authentication-flows-app-scenarios#scenarios-and-supported-platforms-and-languages) across MSAL libraries.

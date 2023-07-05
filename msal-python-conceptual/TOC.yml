@@ -5,8 +5,6 @@
     href: getting-started/why-use-msal-python.md
   - name: Register your app with Azure AD
     href: /azure/active-directory/develop/active-directory-integrating-applications
-  - name: Scenarios
-    href: getting-started/scenarios.md
   - name: Client applications
     href: getting-started/client-applications.md
   - name: Acquiring tokens
