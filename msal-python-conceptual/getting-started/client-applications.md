@@ -11,29 +11,33 @@ description: "How to instantiate client applications in MSAL Python."
 
 Before instantiating your app with MSAL Python:
 
-1. Understand the types of Client applications available- [Public Client and Confidential Client applications](/azure/active-directory/develop/msal-client-applications).
-1. You'll need to [register](/azure/active-directory/develop/quickstart-register-app) the application with Azure AD. You will therefore know:
-    - Its `client_id` (a string representing a GUID)
-    - The identity provider  URL (named the instance) and the sign-in audience for your application. These two parameters are collectively known as the authority.
-    - Possibly the `Tenant+id` in the case you are writing a line of business application (just for your organization, also named single-tenant application)
-    - In case it's a confidential client app, its application secret (`client_secret` string) or certificate
-    - For web apps, you'll have also set the `redirect_uri` where the identity provider will contact back your application with the security tokens.
+1. Understand the types of client applications available - [Public Client and Confidential Client applications](/azure/active-directory/develop/msal-client-applications).
+1. You'll need to [register the application](/azure/active-directory/develop/quickstart-register-app) with Azure AD. From the registration page, you will need:
+    - The application client identifier (a string in the form of a GUID)
+    - The identity provider URL (the instance) and the sign-in audience for your application. These two parameters are collectively known as the **authority**.
+    - If necessary, the tenant identifier (also a GUID) in case you are writing a line of business application scoped to just your organization (also known as a single-tenant application).
+    - If you are building a confidential client app, you will need to create an application secret in the form of a string or certificate.
+    - For web applications, you'll have also set the redirect URL that Azure AD will use to return the code.
 
 ### Instantiating a public client application
 
+Public client applications use the [`PublicClientApplication`](xref:msal.application.PublicClientApplication) class.
+
 ```python
 app = msal.PublicClientApplication(
-    config["client_id"],
-    authority=config["authority"],
+    "client_id",
+    authority="authority",
     )
 ```
 
 ### Instantiating a confidential client application
 
+Confidential client applications use the [`ConfidentialClientApplication`](xref:msal.application.ConfidentialClientApplication) class.
+
 ```python
 app = msal.ConfidentialClientApplication(
-        config["client_id"],
-        authority=config["authority"],
-        client_credential=config["client_secret"],
-        )
+    "client_id",
+    authority="authority",
+    client_credential="client_secret",
+    )
 ```
