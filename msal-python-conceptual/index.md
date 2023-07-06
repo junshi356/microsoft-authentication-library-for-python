@@ -28,6 +28,8 @@ Before using MSAL Python, make sure to [register your application](/azure/active
 >When registering the application, make sure that you set up **redirect URLs** within the **Authentication** blade. Redirect URLs vary depending on the target platform.
 >
 >![Screenshot showing redirect URLs in Azure Portal](./media/redirect-urls.png)
+>
+>For desktop and mobile applications, make sure you add `http://localhost` as redirect URL if you do not rely on authentication brokers.
 
 ## Basic usage
 
@@ -52,7 +54,7 @@ Acquiring tokens with MSAL Python follows a three-step pattern. There will be so
     result = None  # It is just an initial value. Please follow instructions below.
     ```
 
-2. The API model in MSAL provides you explicit control on how to utilize the token cache. While the caching part is technically optional, we highly recommend you to use it in your application. Using the cache you can ensure that you're not making any extra API calls and handle the token refresh automatically.
+2. Try and obtain the tokens from the cache first. The API model in MSAL provides you explicit control on how to utilize the token cache. While the caching part is technically optional, we highly recommend you to use it in your application. Using the cache you can ensure that you're not making any extra API calls and handle the token refresh automatically.
 
    ```python
    # We now check the cache to see
@@ -69,7 +71,7 @@ Acquiring tokens with MSAL Python follows a three-step pattern. There will be so
        result = app.acquire_token_silent(["User.Read"], account=chosen)
    ```
 
-3. If there is no suitable token in the cache or you've chosen to skip the previous step, send a request to Azure AD to get a token. There are different methods based on your client type and scenario. A sample flow can look like this:
+3. If there is no suitable token in the cache or you've chosen to skip the previous step, send a request to Azure AD to get a token. There are different methods based on your client type and scenario, but for the purposes of the example we're showing how to use [`acquire_token_interactive`](xref:msal.application.PublicClientApplication.acquire_token_interactive) which will prompt the user to provide their credentials.
 
    ```python
    if not result:
@@ -89,6 +91,8 @@ Acquiring tokens with MSAL Python follows a three-step pattern. There will be so
 If the application was configured correctly, you should see a web browser window appear asking the user to sign in.
 
 ![Example of an app prompting the user to sign in with their account](./media/basic-pca-app-prompt.gif)
+
+Once the authentication is completed and you closed the browser, you should be able to see the access token printed in the terminal.
 
 ## Usage scenarios
 
