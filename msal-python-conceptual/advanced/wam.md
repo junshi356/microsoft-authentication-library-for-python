@@ -58,24 +58,43 @@ Before executing your application, make sure that you configure the redirect URL
 
 If configuration and instantiation was correct, once you run the application you should see the authentication broker kick in and allow the user to select the account they want to authenticate with.
 
-![]()
+![Example of WAM being called from Python](../media/wam-python.gif)
+
+Worth noting that if you switch to using broker-based authentication, if the user was previously logged in and the account tokens exist in the cache, calling [`acquire_token_interactive`](xref:msal.application.PublicClientApplication.acquire_token_interactive) will still result in a silent attempt to acquire a token from the cache first. To bypass this, you can provide a login hint via `login_hint`.
 
 ## Broker experience differences
 
 Depending on the authority specified when instantiating [`PublicClientApplication`](xref:msal.application.PublicClientApplication), the broker user interface may be different.
 
-### `/consumer`
+### `/consumers`
 
 Used for authenticating **only** with personal Microsoft accounts.
+
+![WAM UI for consumers](../media/wam-consumers.png)
+
+>[!NOTE]
+>If `login_hint` is provided but the account is not yet registered in WAM, the hint will be automatically filled in the "Email or phone" field.
 
 ### `/common`
 
 Used for authenticating with personal Microsoft accounts as well as work and school accounts.
 
+![WAM UI for personal and work accounts](../media/wam-common.png)
+
 ### `/organizations`
 
 Used for authenticating **only** with work and school accounts.
 
+![WAM UI for work accounts only](../media/wam-organizations.png)
+
+>[!NOTE]
+>If `login_hint` is provided but the account is not yet registered in WAM, the hint will be automatically filled in the "Email or phone" field.
+
 ### `/TENANT_ID`
 
 Used for authenticating **only** with work and school accounts within the specified tenant.
+
+![WAM UI for tenant-specific accounts](../media/wam-tenant-specific.png)
+
+>[!NOTE]
+>If `login_hint` is provided but the account is not yet registered in WAM, the hint will be automatically filled in the "Email or phone" field.
