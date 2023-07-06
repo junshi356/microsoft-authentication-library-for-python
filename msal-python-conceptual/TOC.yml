@@ -9,8 +9,6 @@
     href: getting-started/client-applications.md
   - name: Acquiring tokens
     href: getting-started/acquiring-tokens.md
-  - name: Calling a protected API
-    href: getting-started/call-protected-web-api.md
 
 - name: Advanced topics
   items:

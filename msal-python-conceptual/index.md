@@ -116,3 +116,7 @@ Key scenarios supported by MSAL Python:
 - [Application without a browser, or IOT application calling an API in the name of the user](/azure/active-directory/develop/scenario-desktop-acquire-token?tabs=python#command-line-tool-without-web-browser)
 
 Can't find the scenario you are looking for? Check out the [supported scenarios and platforms](/azure/active-directory/develop/authentication-flows-app-scenarios#scenarios-and-supported-platforms-and-languages) across MSAL libraries.
+
+## Releases
+
+Refer to [MSAL Python releases on GitHub](https://github.com/AzureAD/microsoft-authentication-library-for-python/releases).
