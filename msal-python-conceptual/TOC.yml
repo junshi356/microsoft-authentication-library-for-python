@@ -10,6 +10,8 @@
 
 - name: Advanced topics
   items:
+  - name: Using MSAL Python with Web Account Manager
+    href: advanced/wam.md
   - name: Migrate to MSAL Python
     href: /azure/active-directory/develop/migrate-python-adal-msal
   - name: Logging

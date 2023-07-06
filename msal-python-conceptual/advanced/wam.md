@@ -1,0 +1,43 @@
+---
+title: Using MSAL Python with Web Account Manager
+description: "If you are building a Windows application, you might consider simplifying how users authenticate with the help of an authentication broker - the Web Account Manager."
+---
+
+If you are building a Windows application, you might consider simplifying how users authenticate with the help of an _authentication broker_ - the [Web Account Manager](/windows/uwp/security/web-account-manager) (WAM).
+
+>[!NOTE]
+>WAM is only available on Windows 10 and above, as well as Windows Server 2019 and above.
+
+To learn more about the benefits of using an authentication broker, refer to [What is a broker](/entra/msal/dotnet/acquiring-tokens/desktop-mobile/wam#what-is-a-broker) in the MSAL.NET documentation.
+
+## Usage
+
+To use the broker, you will need to install the `pymsalruntime` package from PyPI:
+
+```bash
+pip install pymsalruntime
+```
+
+>[!IMPORTANT]
+>If `pymsalruntime` is not installed and you will try to use the authentication broker, you will get an error: `ImportError: You need to install dependency by: pip install "msal[broker]>=1.20,<2"`.
+
+Next, you will need to instantiate a new [`PublicClientApplication`](xref:msal.application.PublicClientApplication) and set `allow_broker` to `True`. This will ensure that MSAL will try and communicate with WAM instead of popping up a new browser window.
+
+```python
+from msal import PublicClientApplication
+
+app = PublicClientApplication(
+    "CLIENT_ID",
+    authority="https://login.microsoftonline.com/common",
+    allow_broker=True)
+```
+
+You can now acquire a token by calling [`acquire_token_interactive`](xref:msal.application.PublicClientApplication.acquire_token_interactive) and specifying a parent window handle through `parent_window_handle`:
+
+```python
+result = app.acquire_token_interactive(["User.ReadBasic.All"], parent_window_handle=app.CONSOLE_WINDOW_HANDLE)
+```
+
+A parent window handle is required by WAM to ensure that the dialog is shown correctly on top of the requesting window. MSAL does not infer this directly due to the fact that there are many variables that might influence what window WAM needs to bind to, and developers building applications are best suited to decide what window that should be.
+
+For console applications, MSAL makes it easy by offering an out-of-the-box solution to getting the window handle for the terminal - [`CONSOLE_WINDOW_HANDLE`](xref:msal.application.PublicClientApplication.CONSOLE_WINDOW_HANDLE). For desktop applications, additional work with the Windows API might be required to [get the window handle](/windows/apps/develop/ui-input/retrieve-hwnd). Helper packages, like [pywin32](https://pypi.org/project/pywin32/) can help with API calls.
