@@ -21,7 +21,7 @@ pip install msal[broker]>=1.20,<2
 ```
 
 >[!IMPORTANT]
->If `pymsalruntime` is not installed and you will try to use the authentication broker, you will get an error: `ImportError: You need to install dependency by: pip install "msal[broker]>=1.20,<2"`.
+>If broker-related packages are not installed and you will try to use the authentication broker, you will get an error: `ImportError: You need to install dependency by: pip install "msal[broker]>=1.20,<2"`.
 
 Next, you will need to instantiate a new [`PublicClientApplication`](xref:msal.application.PublicClientApplication) and set `allow_broker` to `True`. This will ensure that MSAL will try and communicate with WAM instead of popping up a new browser window.
 
