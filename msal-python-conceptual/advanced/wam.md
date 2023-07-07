@@ -14,10 +14,10 @@ To learn more about the benefits of using an authentication broker, refer to [Wh
 
 ## Usage
 
-To use the broker, you will need to install the `pymsalruntime` package from PyPI:
+To use the broker, you will need to install the broker-related packages in addition to the core MSAL from PyPI:
 
 ```bash
-pip install pymsalruntime
+pip install msal[broker]>=1.20,<2
 ```
 
 >[!IMPORTANT]
