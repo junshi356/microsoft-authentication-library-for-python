@@ -60,7 +60,7 @@ If configuration and instantiation was correct, once you run the application you
 
 ![Example of WAM being called from Python](../media/wam-python.gif)
 
-Worth noting that if you switch to using broker-based authentication, if the user was previously logged in and the account tokens exist in the cache, calling [`acquire_token_interactive`](xref:msal.application.PublicClientApplication.acquire_token_interactive) will still result in a silent attempt to acquire a token from the cache first. To bypass this, you can provide a login hint via `login_hint`.
+Worth noting that if you switch to using broker-based authentication, if the user was previously logged in and the signed-in state is still valid, calling [`acquire_token_interactive`](xref:msal.application.PublicClientApplication.acquire_token_interactive) will still result in a silent attempt to acquire a token, and only prompt when necessary. If you prefer to always prompt, you can use this optional parameter `prompt="select_account"`.
 
 ## Broker experience differences
 
