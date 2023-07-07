@@ -88,6 +88,9 @@ Acquiring tokens with MSAL Python follows a three-step pattern. There will be so
 4. Save the code into a Python file locally, such as `msaltest.py`.
 5. Run the code by executing `python .\msalpytest.py`.
 
+>[!NOTE]
+>You can also download runnable samples from the [library repository](https://github.com/AzureAD/microsoft-authentication-library-for-python/blob/1.22.0/sample/interactive_sample.py).
+
 If the application was configured correctly, you should see a web browser window appear asking the user to sign in.
 
 ![Example of an app prompting the user to sign in with their account](./media/basic-pca-app-prompt.gif)
