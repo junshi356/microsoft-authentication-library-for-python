@@ -1,19 +1,17 @@
 - name: Getting started
   href: index.md
   items:
-  - name: Why use MSAL Python
-    href: getting-started/why-use-msal-python.md
   - name: Register your app with Azure AD
     href: /azure/active-directory/develop/active-directory-integrating-applications
   - name: Client applications
     href: getting-started/client-applications.md
   - name: Acquiring tokens
     href: getting-started/acquiring-tokens.md
-  - name: Calling a protected API
-    href: getting-started/call-protected-web-api.md
 
 - name: Advanced topics
   items:
+  - name: Using MSAL Python with Web Account Manager
+    href: advanced/wam.md
   - name: Migrate to MSAL Python
     href: /azure/active-directory/develop/migrate-python-adal-msal
   - name: Logging

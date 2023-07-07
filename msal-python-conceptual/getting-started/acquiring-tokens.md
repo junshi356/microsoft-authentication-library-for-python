@@ -13,7 +13,7 @@ Before acquiring tokens with MSAL Python, make sure to instantiate a [client app
 
 ## Token acquisition methods
 
-The approach to acquiring a token is different depending on the application type -  public client applications (desktop and mobile) or confidential client application (web app, web API, or a daemon application like a Windows service). Each of the individual approaches is described below.
+The approach to acquiring a token is different depending on the application type - public client applications (desktop and mobile) or confidential client application (web app, web API, or a daemon application like a Windows service). Each of the individual approaches is described below.
 
 ### Public client applications
 
