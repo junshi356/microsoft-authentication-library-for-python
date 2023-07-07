@@ -72,9 +72,6 @@ Used for authenticating **only** with personal Microsoft accounts.
 
 ![WAM UI for consumers](../media/wam-consumers.png)
 
->[!NOTE]
->If `login_hint` is provided but the account is not yet registered in WAM, the hint will be automatically filled in the "Email or phone" field.
-
 ### `/common`
 
 Used for authenticating with personal Microsoft accounts as well as work and school accounts.
