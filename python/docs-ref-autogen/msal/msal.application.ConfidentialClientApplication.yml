@@ -365,7 +365,7 @@ methods:
 
     another token to access downstream web API, on behalf of that user.
 
-    See [detail docs here](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
+    See [detail docs here](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow)
     .
 
 
@@ -373,7 +373,7 @@ methods:
 
     See how to gain consent upfront for your middle-tier app from this article.
 
-    [https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow#gaining-consent-for-the-middle-tier-application](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow#gaining-consent-for-the-middle-tier-application)'
+    [/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow#gaining-consent-for-the-middle-tier-application](/azure/active-directory/develop/v2-oauth2-on-behalf-of-flow#gaining-consent-for-the-middle-tier-application)'
   signature: acquire_token_on_behalf_of(user_assertion, scopes, claims_challenge=None,
     **kwargs)
   parameters:

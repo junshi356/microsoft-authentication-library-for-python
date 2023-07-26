@@ -485,7 +485,7 @@ methods:
 
       Each scope needs to be in the Microsoft identity platform (v2) format.
 
-      See [Scopes not resources](https://docs.microsoft.com/en-us/azure/active-directory/develop/migrate-python-adal-msal#scopes-not-resources).'
+      See [Scopes not resources](/azure/active-directory/develop/migrate-python-adal-msal#scopes-not-resources).'
     isRequired: true
     types:
     - <xref:list>
@@ -688,7 +688,7 @@ methods:
 
       which would trigger an Implicit Grant, but that is
 
-      [not recommended](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-implicit-grant-flow#is-the-implicit-grant-suitable-for-my-app).'
+      [not recommended](/azure/active-directory/develop/v2-oauth2-implicit-grant-flow#is-the-implicit-grant-suitable-for-my-app).'
     defaultValue: code
     types:
     - <xref:str>

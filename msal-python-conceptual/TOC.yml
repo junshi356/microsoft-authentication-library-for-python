@@ -1,2 +1,55 @@
-- name: Index
+- name: Getting started
   href: index.md
+  items:
+  - name: Register your app with Azure AD
+    href: /azure/active-directory/develop/active-directory-integrating-applications
+  - name: Client applications
+    href: getting-started/client-applications.md
+  - name: Acquiring tokens
+    href: getting-started/acquiring-tokens.md
+
+- name: Advanced topics
+  items:
+  - name: Using MSAL Python with Web Account Manager
+    href: advanced/wam.md
+  - name: Migrate to MSAL Python
+    href: /azure/active-directory/develop/migrate-python-adal-msal
+  - name: Logging
+    href: /azure/active-directory/develop/msal-logging-python
+  - name: Handle errors and exceptions
+    href: /azure/active-directory/develop/msal-error-handling-python
+  - name: Conditional access
+    href: advanced/conditional-access.md
+  - name: Token cache serialization
+    href: /azure/active-directory/develop/msal-python-token-cache-serialization
+  - name: Developing an Azure AD B2C app with MSAL Python
+    href: advanced/aad-b2c.md
+  - name: Active Directory Federation Services (ADFS) Support
+    href: /azure/active-directory/develop/msal-python-adfs-support
+  - name: National clouds
+    href: /azure/active-directory/develop/msal-national-cloud?tabs=python
+  - name: Username and password authentication
+    href: advanced/username-password-authentication.md
+  - name: How to generate secret and/or certificate for Confidential Client
+    href: advanced/client-credentials.md
+  - name: Handle SameSite cookie changes in Chrome
+    href: /azure/active-directory/develop/howto-handle-samesite-cookie-changes-chrome-browser?tabs=python
+  - name: Migrate existing refresh tokens into MSAL Python
+    href: advanced/migrate.md
+  - name: Logging
+    href: advanced/logging.md
+  - name: Instance metadata caching
+    href: advanced/instance-metadata-caching.md
+  - name: Client capabilities
+    href: advanced/client-capabilities.md
+  - name: Best practices
+    href: advanced/best-practices.md
+
+- name: Additional resources
+  items:
+  - name: Releases
+    href: https://github.com/AzureAD/microsoft-authentication-library-for-python/releases
+  - name: Azure AD Developer Guide
+    href: https://aka.ms/aaddevv2
+  - name: Code samples
+    href: /azure/active-directory/develop/sample-v2-code

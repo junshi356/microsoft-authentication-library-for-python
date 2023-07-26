@@ -36,19 +36,6 @@
           "target_framework": "net45",
           "version": "latest"
         }
-      ],
-      "JoinTOCPlugin": [
-        {
-          "ReferenceTOC": "docs-ref-autogen/toc.yml",
-          "ReferenceTOCUrl": "/python/api/msal_py_toc/toc.json?view=msal-py-latest",
-          "ConceptualTOC": "docs-ref-conceptual/toc.yml",
-          "ConceptualTOCUrl": "/python/api/msal/toc.json?view=msal-py-latest",
-          "ContainerPageMetadata": {
-            "langs": [
-              "python"
-            ]
-          }
-        }
       ]
     },
     {
@@ -59,16 +46,38 @@
       "monikers": [],
       "moniker_ranges": [],
       "open_to_public_contributors": true,
+      "xref_query_tags": [
+        "/python"
+      ],
       "type_mapping": {
         "Conceptual": "Content"
       },
       "build_entry_point": "docs",
-      "template_folder": "_themes"
+      "template_folder": "_themes",
+      "customized_tasks": {
+        "docset_prebuild": [
+          "_dependentPackages/CommonPlugins/tools/JoinTOC.ps1"
+        ]
+      }
     }
   ],
   "notification_subscribers": [],
   "sync_notification_subscribers": [],
   "branches_to_filter": [],
+  "JoinTOCPlugin": [
+    {
+      "TopLevelTOC": "python/docs-ref-mapping/ref-toc.yml",
+      "ReferenceTOC": "python/docs-ref-autogen/toc.yml",
+      "ReferenceTOCUrl": "/python/api/msal_py_toc/toc.json?view=msal-py-latest",
+      "ConceptualTOC": "msal-python-conceptual/toc.yml",
+      "ConceptualTOCUrl": "/entra/msal/python/toc.json",
+      "ContainerPageMetadata": {
+        "langs": [
+          "python"
+        ]
+      }
+    }
+  ],
   "need_preview_pull_request": true,
   "dependent_repositories": [
     {
@@ -81,5 +90,5 @@
   "branch_target_mapping": {},
   "skip_source_output_uploading": false,
   "contribution_branch_mappings": {},
-  "need_generate_pdf_url_template": false
+  "need_generate_pdf_url_template": true
 }
