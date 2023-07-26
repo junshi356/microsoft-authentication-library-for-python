@@ -5,7 +5,12 @@ fullName: msal.application.ConfidentialClientApplication
 module: msal.application
 inheritances:
 - msal.application.ClientApplication
-summary: Create an instance of application.
+summary: 'Same as <xref:ClientApplication.__init__>,
+
+  except that `allow_broker` parameter shall remain `None`.
+
+
+  Create an instance of application.'
 constructor:
   syntax: ConfidentialClientApplication(client_id, client_credential=None, authority=None,
     validate_authority=True, token_cache=None, http_client=None, verify=True, proxies=None,
@@ -285,8 +290,9 @@ constructor:
     types:
     - <xref:boolean>
   - name: allow_broker
-    description: "A broker is a component installed on your device.\nBroker implicitly\
-      \ gives your device an identity. By using a broker,\nyour device becomes a factor\
+    description: "This parameter is NOT applicable to <xref:msal.application.ConfidentialClientApplication>.\n\
+      \nA broker is a component installed on your device.\nBroker implicitly gives\
+      \ your device an identity. By using a broker,\nyour device becomes a factor\
       \ that can satisfy MFA (Multi-factor authentication).\nThis factor would become\
       \ mandatory\nif a tenant's admin enables a corresponding Conditional Access\
       \ (CA) policy.\nThe broker's presence allows Microsoft identity platform\nto\
@@ -315,7 +321,12 @@ constructor:
 methods:
 - uid: msal.application.ConfidentialClientApplication.acquire_token_for_client
   name: acquire_token_for_client
-  summary: Acquires token for the current confidential client, not for an end user.
+  summary: 'Acquires token for the current confidential client, not for an end user.
+
+
+    Since MSAL Python 1.23, it will automatically look for token from cache,
+
+    and only send request to Identity Provider when cache misses.'
   signature: acquire_token_for_client(scopes, claims_challenge=None, **kwargs)
   parameters:
   - name: scopes
