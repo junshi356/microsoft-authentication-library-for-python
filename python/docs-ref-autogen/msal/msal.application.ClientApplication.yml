@@ -5,7 +5,12 @@ fullName: msal.application.ClientApplication
 module: msal.application
 inheritances:
 - builtins.object
-summary: Create an instance of application.
+summary: 'You do not usually directly use this class. Use its subclasses instead:
+
+  <xref:msal.application.PublicClientApplication> and <xref:msal.application.ConfidentialClientApplication>.
+
+
+  Create an instance of application.'
 constructor:
   syntax: ClientApplication(client_id, client_credential=None, authority=None, validate_authority=True,
     token_cache=None, http_client=None, verify=True, proxies=None, timeout=None, client_claims=None,
@@ -284,8 +289,9 @@ constructor:
     types:
     - <xref:boolean>
   - name: allow_broker
-    description: "A broker is a component installed on your device.\nBroker implicitly\
-      \ gives your device an identity. By using a broker,\nyour device becomes a factor\
+    description: "This parameter is NOT applicable to <xref:msal.application.ConfidentialClientApplication>.\n\
+      \nA broker is a component installed on your device.\nBroker implicitly gives\
+      \ your device an identity. By using a broker,\nyour device becomes a factor\
       \ that can satisfy MFA (Multi-factor authentication).\nThis factor would become\
       \ mandatory\nif a tenant's admin enables a corresponding Conditional Access\
       \ (CA) policy.\nThe broker's presence allows Microsoft identity platform\nto\
@@ -533,12 +539,9 @@ methods:
   summary: 'Acquire an access token for given account, without user interaction.
 
 
-    It is done either by finding a valid access token from cache,
+    It has same parameters as the <xref:msal.application.ClientApplication.acquire_token_silent_with_error>.
 
-    or by finding a valid refresh token from cache and then automatically
-
-    use it to redeem a new access token.
-
+    The difference is the behavior of the return value.
 
     This method will combine the cache empty and refresh error
 
@@ -546,25 +549,10 @@ methods:
 
     If your app does not care about the exact token refresh error during
 
-    token cache look-up, then this method is easier and recommended.
-
-
-    Internally, this method calls <xref:msal.application.ClientApplication.acquire_token_silent_with_error>.'
+    token cache look-up, then this method is easier and recommended.'
   signature: acquire_token_silent(scopes, account, authority=None, force_refresh=False,
     claims_challenge=None, **kwargs)
   parameters:
-  - name: claims_challenge
-    description: 'The claims_challenge parameter requests specific claims requested
-      by the resource provider
-
-      in the form of a claims_challenge directive in the www-authenticate header to
-      be
-
-      returned from the UserInfo Endpoint and/or in the ID Token and/or Access Token.
-
-      It is a string of a JSON object which contains lists of claims being requested
-      from these locations.'
-    defaultValue: None
   - name: scopes
     isRequired: true
   - name: account
@@ -573,6 +561,8 @@ methods:
     defaultValue: None
   - name: force_refresh
     defaultValue: 'False'
+  - name: claims_challenge
+    defaultValue: None
   return:
     description: "* A dict containing no \"error\" key, and typically contains an\
       \ \"access_token\" key, if cache lookup succeeded. \n\n* None when cache lookup\
@@ -608,9 +598,13 @@ methods:
     types:
     - <xref:list>[<xref:str>]
   - name: account
-    description: 'one of the account object returned by <xref:msal.application.ClientApplication.get_accounts>,
+    description: '(Required)
 
-      or use None when you want to find an access token for this client.'
+      One of the account object returned by <xref:msal.application.ClientApplication.get_accounts>.
+
+      Starting from MSAL Python 1.23,
+
+      a `None` input will become a NO-OP and always return `None`.'
     isRequired: true
   - name: force_refresh
     description: 'If True, it will skip Access Token look-up,
@@ -723,12 +717,12 @@ methods:
 
       through on the sign-in page, leading to a slightly more streamlined user experience.
 
-      More information on possible values
+      More information on possible values available in
 
-      [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow#request-an-authorization-code)
+      [Auth Code Flow doc](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow#request-an-authorization-code)
       and
 
-      [here](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-oapx/86fb452d-e34a-494e-ac61-e526e263b6d8).'
+      [domain_hint doc](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-oapx/86fb452d-e34a-494e-ac61-e526e263b6d8).'
     defaultValue: None
   - name: claims_challenge
     description: 'The claims_challenge parameter requests specific claims requested
@@ -801,12 +795,12 @@ methods:
 
       through on the sign-in page, leading to a slightly more streamlined user experience.
 
-      More information on possible values
+      More information on possible values available in
 
-      [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow#request-an-authorization-code)
+      [Auth Code Flow doc](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow#request-an-authorization-code)
       and
 
-      [here](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-oapx/86fb452d-e34a-494e-ac61-e526e263b6d8).'
+      [domain_hint doc](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-oapx/86fb452d-e34a-494e-ac61-e526e263b6d8).'
     defaultValue: None
   - name: max_age
     description: 'OPTIONAL. Maximum Authentication Age.

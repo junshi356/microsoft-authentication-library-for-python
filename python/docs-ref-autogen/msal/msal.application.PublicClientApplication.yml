@@ -5,6 +5,9 @@ fullName: msal.application.PublicClientApplication
 module: msal.application
 inheritances:
 - msal.application.ClientApplication
+summary: 'Same as <xref:ClientApplication.__init__>,
+
+  except that `client_credential` parameter shall remain `None`.'
 constructor:
   syntax: PublicClientApplication(client_id, client_credential=None, **kwargs)
   parameters:
@@ -92,12 +95,12 @@ methods:
 
       through on the sign-in page, leading to a slightly more streamlined user experience.
 
-      More information on possible values
+      More information on possible values available in
 
-      [here](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow#request-an-authorization-code)
+      [Auth Code Flow doc](https://docs.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow#request-an-authorization-code)
       and
 
-      [here](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-oapx/86fb452d-e34a-494e-ac61-e526e263b6d8).'
+      [domain_hint doc](https://docs.microsoft.com/en-us/openspecs/windows_protocols/ms-oapx/86fb452d-e34a-494e-ac61-e526e263b6d8).'
     defaultValue: None
   - name: claims_challenge
     description: 'The claims_challenge parameter requests specific claims requested
