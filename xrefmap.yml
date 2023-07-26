@@ -1447,6 +1447,38 @@ references:
   href: https://docs.python.org/3/library/stdtypes.html#class.__mro__
   name: __mro__
   uid: class.__mro__
+- fullName: clinic.CConverter.c_default
+  href: https://docs.python.org/3/howto/clinic.html#clinic.CConverter.c_default
+  name: c_default
+  uid: clinic.CConverter.c_default
+- fullName: clinic.CConverter.c_ignored_default
+  href: https://docs.python.org/3/howto/clinic.html#clinic.CConverter.c_ignored_default
+  name: c_ignored_default
+  uid: clinic.CConverter.c_ignored_default
+- fullName: clinic.CConverter.converter
+  href: https://docs.python.org/3/howto/clinic.html#clinic.CConverter.converter
+  name: converter
+  uid: clinic.CConverter.converter
+- fullName: clinic.CConverter.default
+  href: https://docs.python.org/3/howto/clinic.html#clinic.CConverter.default
+  name: default
+  uid: clinic.CConverter.default
+- fullName: clinic.CConverter.impl_by_reference
+  href: https://docs.python.org/3/howto/clinic.html#clinic.CConverter.impl_by_reference
+  name: impl_by_reference
+  uid: clinic.CConverter.impl_by_reference
+- fullName: clinic.CConverter.parse_by_reference
+  href: https://docs.python.org/3/howto/clinic.html#clinic.CConverter.parse_by_reference
+  name: parse_by_reference
+  uid: clinic.CConverter.parse_by_reference
+- fullName: clinic.CConverter.py_default
+  href: https://docs.python.org/3/howto/clinic.html#clinic.CConverter.py_default
+  name: py_default
+  uid: clinic.CConverter.py_default
+- fullName: clinic.CConverter.type
+  href: https://docs.python.org/3/howto/clinic.html#clinic.CConverter.type
+  name: type
+  uid: clinic.CConverter.type
 - fullName: cmd.Cmd.cmdqueue
   href: https://docs.python.org/3/library/cmd.html#cmd.Cmd.cmdqueue
   name: cmdqueue
@@ -18323,34 +18355,6 @@ references:
   href: https://docs.python.org/3/library/constants.html#False
   name: 'False'
   uid: 'False'
-- fullName: METH_CLASS
-  href: https://docs.python.org/3/c-api/structures.html#METH_CLASS
-  name: METH_CLASS
-  uid: METH_CLASS
-- fullName: METH_COEXIST
-  href: https://docs.python.org/3/c-api/structures.html#METH_COEXIST
-  name: METH_COEXIST
-  uid: METH_COEXIST
-- fullName: METH_FASTCALL
-  href: https://docs.python.org/3/c-api/structures.html#METH_FASTCALL
-  name: METH_FASTCALL
-  uid: METH_FASTCALL
-- fullName: METH_NOARGS
-  href: https://docs.python.org/3/c-api/structures.html#METH_NOARGS
-  name: METH_NOARGS
-  uid: METH_NOARGS
-- fullName: METH_O
-  href: https://docs.python.org/3/c-api/structures.html#METH_O
-  name: METH_O
-  uid: METH_O
-- fullName: METH_STATIC
-  href: https://docs.python.org/3/c-api/structures.html#METH_STATIC
-  name: METH_STATIC
-  uid: METH_STATIC
-- fullName: METH_VARARGS
-  href: https://docs.python.org/3/c-api/structures.html#METH_VARARGS
-  name: METH_VARARGS
-  uid: METH_VARARGS
 - fullName: None
   href: https://docs.python.org/3/library/constants.html#None
   name: None
@@ -18359,90 +18363,6 @@ references:
   href: https://docs.python.org/3/library/constants.html#NotImplemented
   name: NotImplemented
   uid: NotImplemented
-- fullName: Py_TPFLAGS_BASETYPE
-  href: https://docs.python.org/3/c-api/typeobj.html#Py_TPFLAGS_BASETYPE
-  name: Py_TPFLAGS_BASETYPE
-  uid: Py_TPFLAGS_BASETYPE
-- fullName: Py_TPFLAGS_BASE_EXC_SUBCLASS
-  href: https://docs.python.org/3/c-api/typeobj.html#Py_TPFLAGS_BASE_EXC_SUBCLASS
-  name: Py_TPFLAGS_BASE_EXC_SUBCLASS
-  uid: Py_TPFLAGS_BASE_EXC_SUBCLASS
-- fullName: Py_TPFLAGS_BYTES_SUBCLASS
-  href: https://docs.python.org/3/c-api/typeobj.html#Py_TPFLAGS_BYTES_SUBCLASS
-  name: Py_TPFLAGS_BYTES_SUBCLASS
-  uid: Py_TPFLAGS_BYTES_SUBCLASS
-- fullName: Py_TPFLAGS_DEFAULT
-  href: https://docs.python.org/3/c-api/typeobj.html#Py_TPFLAGS_DEFAULT
-  name: Py_TPFLAGS_DEFAULT
-  uid: Py_TPFLAGS_DEFAULT
-- fullName: Py_TPFLAGS_DICT_SUBCLASS
-  href: https://docs.python.org/3/c-api/typeobj.html#Py_TPFLAGS_DICT_SUBCLASS
-  name: Py_TPFLAGS_DICT_SUBCLASS
-  uid: Py_TPFLAGS_DICT_SUBCLASS
-- fullName: Py_TPFLAGS_DISALLOW_INSTANTIATION
-  href: https://docs.python.org/3/c-api/typeobj.html#Py_TPFLAGS_DISALLOW_INSTANTIATION
-  name: Py_TPFLAGS_DISALLOW_INSTANTIATION
-  uid: Py_TPFLAGS_DISALLOW_INSTANTIATION
-- fullName: Py_TPFLAGS_HAVE_FINALIZE
-  href: https://docs.python.org/3/c-api/typeobj.html#Py_TPFLAGS_HAVE_FINALIZE
-  name: Py_TPFLAGS_HAVE_FINALIZE
-  uid: Py_TPFLAGS_HAVE_FINALIZE
-- fullName: Py_TPFLAGS_HAVE_GC
-  href: https://docs.python.org/3/c-api/typeobj.html#Py_TPFLAGS_HAVE_GC
-  name: Py_TPFLAGS_HAVE_GC
-  uid: Py_TPFLAGS_HAVE_GC
-- fullName: Py_TPFLAGS_HAVE_VECTORCALL
-  href: https://docs.python.org/3/c-api/typeobj.html#Py_TPFLAGS_HAVE_VECTORCALL
-  name: Py_TPFLAGS_HAVE_VECTORCALL
-  uid: Py_TPFLAGS_HAVE_VECTORCALL
-- fullName: Py_TPFLAGS_HEAPTYPE
-  href: https://docs.python.org/3/c-api/typeobj.html#Py_TPFLAGS_HEAPTYPE
-  name: Py_TPFLAGS_HEAPTYPE
-  uid: Py_TPFLAGS_HEAPTYPE
-- fullName: Py_TPFLAGS_IMMUTABLETYPE
-  href: https://docs.python.org/3/c-api/typeobj.html#Py_TPFLAGS_IMMUTABLETYPE
-  name: Py_TPFLAGS_IMMUTABLETYPE
-  uid: Py_TPFLAGS_IMMUTABLETYPE
-- fullName: Py_TPFLAGS_LIST_SUBCLASS
-  href: https://docs.python.org/3/c-api/typeobj.html#Py_TPFLAGS_LIST_SUBCLASS
-  name: Py_TPFLAGS_LIST_SUBCLASS
-  uid: Py_TPFLAGS_LIST_SUBCLASS
-- fullName: Py_TPFLAGS_LONG_SUBCLASS
-  href: https://docs.python.org/3/c-api/typeobj.html#Py_TPFLAGS_LONG_SUBCLASS
-  name: Py_TPFLAGS_LONG_SUBCLASS
-  uid: Py_TPFLAGS_LONG_SUBCLASS
-- fullName: Py_TPFLAGS_MAPPING
-  href: https://docs.python.org/3/c-api/typeobj.html#Py_TPFLAGS_MAPPING
-  name: Py_TPFLAGS_MAPPING
-  uid: Py_TPFLAGS_MAPPING
-- fullName: Py_TPFLAGS_METHOD_DESCRIPTOR
-  href: https://docs.python.org/3/c-api/typeobj.html#Py_TPFLAGS_METHOD_DESCRIPTOR
-  name: Py_TPFLAGS_METHOD_DESCRIPTOR
-  uid: Py_TPFLAGS_METHOD_DESCRIPTOR
-- fullName: Py_TPFLAGS_READY
-  href: https://docs.python.org/3/c-api/typeobj.html#Py_TPFLAGS_READY
-  name: Py_TPFLAGS_READY
-  uid: Py_TPFLAGS_READY
-- fullName: Py_TPFLAGS_READYING
-  href: https://docs.python.org/3/c-api/typeobj.html#Py_TPFLAGS_READYING
-  name: Py_TPFLAGS_READYING
-  uid: Py_TPFLAGS_READYING
-- fullName: Py_TPFLAGS_SEQUENCE
-  href: https://docs.python.org/3/c-api/typeobj.html#Py_TPFLAGS_SEQUENCE
-  name: Py_TPFLAGS_SEQUENCE
-  uid: Py_TPFLAGS_SEQUENCE
-- fullName: Py_TPFLAGS_TUPLE_SUBCLASS
-  href: https://docs.python.org/3/c-api/typeobj.html#Py_TPFLAGS_TUPLE_SUBCLASS
-  name: Py_TPFLAGS_TUPLE_SUBCLASS
-  uid: Py_TPFLAGS_TUPLE_SUBCLASS
-- fullName: Py_TPFLAGS_TYPE_SUBCLASS
-  href: https://docs.python.org/3/c-api/typeobj.html#Py_TPFLAGS_TYPE_SUBCLASS
-  name: Py_TPFLAGS_TYPE_SUBCLASS
-  uid: Py_TPFLAGS_TYPE_SUBCLASS
-- fullName: Py_TPFLAGS_UNICODE_SUBCLASS
-  href: https://docs.python.org/3/c-api/typeobj.html#Py_TPFLAGS_UNICODE_SUBCLASS
-  name: Py_TPFLAGS_UNICODE_SUBCLASS
-  uid: Py_TPFLAGS_UNICODE_SUBCLASS
 - fullName: 'True'
   href: https://docs.python.org/3/library/constants.html#True
   name: 'True'
@@ -18979,6 +18899,10 @@ references:
   href: https://docs.python.org/3/library/curses.html#curses.COLOR_YELLOW
   name: COLOR_YELLOW
   uid: curses.COLOR_YELLOW
+- fullName: curses.COLS
+  href: https://docs.python.org/3/library/curses.html#curses.COLS
+  name: COLS
+  uid: curses.COLS
 - fullName: curses.ERR
   href: https://docs.python.org/3/library/curses.html#curses.ERR
   name: ERR
@@ -19359,6 +19283,10 @@ references:
   href: https://docs.python.org/3/library/curses.html#curses.KEY_UP
   name: KEY_UP
   uid: curses.KEY_UP
+- fullName: curses.LINES
+  href: https://docs.python.org/3/library/curses.html#curses.LINES
+  name: LINES
+  uid: curses.LINES
 - fullName: curses.OK
   href: https://docs.python.org/3/library/curses.html#curses.OK
   name: OK
@@ -21535,6 +21463,14 @@ references:
   href: https://docs.python.org/3/library/re.html#re.S
   name: S
   uid: re.S
+- fullName: re.U
+  href: https://docs.python.org/3/library/re.html#re.U
+  name: U
+  uid: re.U
+- fullName: re.UNICODE
+  href: https://docs.python.org/3/library/re.html#re.UNICODE
+  name: UNICODE
+  uid: re.UNICODE
 - fullName: re.VERBOSE
   href: https://docs.python.org/3/library/re.html#re.VERBOSE
   name: VERBOSE
@@ -24255,6 +24191,10 @@ references:
   href: https://docs.python.org/3/library/chunk.html#module-chunk
   name: chunk
   uid: chunk
+- fullName: clinic
+  href: https://docs.python.org/3/howto/clinic.html#module-clinic
+  name: clinic
+  uid: clinic
 - fullName: cmath
   href: https://docs.python.org/3/library/cmath.html#module-cmath
   name: cmath
@@ -35203,6 +35143,10 @@ references:
   href: https://docs.python.org/3/library/chunk.html#chunk.Chunk
   name: Chunk
   uid: chunk.Chunk
+- fullName: clinic.CConverter
+  href: https://docs.python.org/3/howto/clinic.html#clinic.CConverter
+  name: CConverter
+  uid: clinic.CConverter
 - fullName: cmd.Cmd
   href: https://docs.python.org/3/library/cmd.html#cmd.Cmd
   name: Cmd
