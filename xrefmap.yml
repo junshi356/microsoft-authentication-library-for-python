@@ -38247,20 +38247,3 @@ references:
   href: https://docs.python.org/3/library/zoneinfo.html#zoneinfo.ZoneInfo
   name: ZoneInfo
   uid: zoneinfo.ZoneInfo
-- fullName: boolean
-  href: https://docs.python.org/3/library/stdtypes.html#bltin-boolean-values
-  name: boolean
-  uid: boolean
-- fullName: Union
-  href: https://docs.python.org/3/library/typing.html#typing.Union
-  name: Union
-  uid: Union
-- fullName: function
-  href: https://docs.python.org/3/reference/compound_stmts.html#function
-  name: function
-  uid: function
-- fullName: builtins.object
-  href: https://docs.python.org/3/library/builtins.html
-  name: builtins.object
-  uid: builtins.object
-  
