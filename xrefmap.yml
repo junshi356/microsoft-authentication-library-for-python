@@ -3299,6 +3299,18 @@ references:
   href: https://docs.python.org/3/library/multiprocessing.shared_memory.html#multiprocessing.shared_memory.SharedMemory.size
   name: size
   uid: multiprocessing.shared_memory.SharedMemory.size
+- fullName: netrc.NetrcParseError.filename
+  href: https://docs.python.org/3/library/netrc.html#netrc.NetrcParseError.filename
+  name: filename
+  uid: netrc.NetrcParseError.filename
+- fullName: netrc.NetrcParseError.lineno
+  href: https://docs.python.org/3/library/netrc.html#netrc.NetrcParseError.lineno
+  name: lineno
+  uid: netrc.NetrcParseError.lineno
+- fullName: netrc.NetrcParseError.msg
+  href: https://docs.python.org/3/library/netrc.html#netrc.NetrcParseError.msg
+  name: msg
+  uid: netrc.NetrcParseError.msg
 - fullName: netrc.netrc.hosts
   href: https://docs.python.org/3/library/netrc.html#netrc.netrc.hosts
   name: hosts
@@ -4343,6 +4355,198 @@ references:
   href: https://docs.python.org/3/library/subprocess.html#subprocess.TimeoutExpired.timeout
   name: timeout
   uid: subprocess.TimeoutExpired.timeout
+- fullName: sys._emscripten_info.emscripten_version
+  href: https://docs.python.org/3/library/sys.html#sys._emscripten_info.emscripten_version
+  name: emscripten_version
+  uid: sys._emscripten_info.emscripten_version
+- fullName: sys._emscripten_info.pthreads
+  href: https://docs.python.org/3/library/sys.html#sys._emscripten_info.pthreads
+  name: pthreads
+  uid: sys._emscripten_info.pthreads
+- fullName: sys._emscripten_info.runtime
+  href: https://docs.python.org/3/library/sys.html#sys._emscripten_info.runtime
+  name: runtime
+  uid: sys._emscripten_info.runtime
+- fullName: sys._emscripten_info.shared_memory
+  href: https://docs.python.org/3/library/sys.html#sys._emscripten_info.shared_memory
+  name: shared_memory
+  uid: sys._emscripten_info.shared_memory
+- fullName: sys.flags.bytes_warning
+  href: https://docs.python.org/3/library/sys.html#sys.flags.bytes_warning
+  name: bytes_warning
+  uid: sys.flags.bytes_warning
+- fullName: sys.flags.debug
+  href: https://docs.python.org/3/library/sys.html#sys.flags.debug
+  name: debug
+  uid: sys.flags.debug
+- fullName: sys.flags.dev_mode
+  href: https://docs.python.org/3/library/sys.html#sys.flags.dev_mode
+  name: dev_mode
+  uid: sys.flags.dev_mode
+- fullName: sys.flags.dont_write_bytecode
+  href: https://docs.python.org/3/library/sys.html#sys.flags.dont_write_bytecode
+  name: dont_write_bytecode
+  uid: sys.flags.dont_write_bytecode
+- fullName: sys.flags.hash_randomization
+  href: https://docs.python.org/3/library/sys.html#sys.flags.hash_randomization
+  name: hash_randomization
+  uid: sys.flags.hash_randomization
+- fullName: sys.flags.ignore_environment
+  href: https://docs.python.org/3/library/sys.html#sys.flags.ignore_environment
+  name: ignore_environment
+  uid: sys.flags.ignore_environment
+- fullName: sys.flags.inspect
+  href: https://docs.python.org/3/library/sys.html#sys.flags.inspect
+  name: inspect
+  uid: sys.flags.inspect
+- fullName: sys.flags.int_max_str_digits
+  href: https://docs.python.org/3/library/sys.html#sys.flags.int_max_str_digits
+  name: int_max_str_digits
+  uid: sys.flags.int_max_str_digits
+- fullName: sys.flags.interactive
+  href: https://docs.python.org/3/library/sys.html#sys.flags.interactive
+  name: interactive
+  uid: sys.flags.interactive
+- fullName: sys.flags.isolated
+  href: https://docs.python.org/3/library/sys.html#sys.flags.isolated
+  name: isolated
+  uid: sys.flags.isolated
+- fullName: sys.flags.no_site
+  href: https://docs.python.org/3/library/sys.html#sys.flags.no_site
+  name: no_site
+  uid: sys.flags.no_site
+- fullName: sys.flags.no_user_site
+  href: https://docs.python.org/3/library/sys.html#sys.flags.no_user_site
+  name: no_user_site
+  uid: sys.flags.no_user_site
+- fullName: sys.flags.optimize
+  href: https://docs.python.org/3/library/sys.html#sys.flags.optimize
+  name: optimize
+  uid: sys.flags.optimize
+- fullName: sys.flags.quiet
+  href: https://docs.python.org/3/library/sys.html#sys.flags.quiet
+  name: quiet
+  uid: sys.flags.quiet
+- fullName: sys.flags.safe_path
+  href: https://docs.python.org/3/library/sys.html#sys.flags.safe_path
+  name: safe_path
+  uid: sys.flags.safe_path
+- fullName: sys.flags.utf8_mode
+  href: https://docs.python.org/3/library/sys.html#sys.flags.utf8_mode
+  name: utf8_mode
+  uid: sys.flags.utf8_mode
+- fullName: sys.flags.verbose
+  href: https://docs.python.org/3/library/sys.html#sys.flags.verbose
+  name: verbose
+  uid: sys.flags.verbose
+- fullName: sys.flags.warn_default_encoding
+  href: https://docs.python.org/3/library/sys.html#sys.flags.warn_default_encoding
+  name: warn_default_encoding
+  uid: sys.flags.warn_default_encoding
+- fullName: sys.float_info.dig
+  href: https://docs.python.org/3/library/sys.html#sys.float_info.dig
+  name: dig
+  uid: sys.float_info.dig
+- fullName: sys.float_info.epsilon
+  href: https://docs.python.org/3/library/sys.html#sys.float_info.epsilon
+  name: epsilon
+  uid: sys.float_info.epsilon
+- fullName: sys.float_info.mant_dig
+  href: https://docs.python.org/3/library/sys.html#sys.float_info.mant_dig
+  name: mant_dig
+  uid: sys.float_info.mant_dig
+- fullName: sys.float_info.max
+  href: https://docs.python.org/3/library/sys.html#sys.float_info.max
+  name: max
+  uid: sys.float_info.max
+- fullName: sys.float_info.max_10_exp
+  href: https://docs.python.org/3/library/sys.html#sys.float_info.max_10_exp
+  name: max_10_exp
+  uid: sys.float_info.max_10_exp
+- fullName: sys.float_info.max_exp
+  href: https://docs.python.org/3/library/sys.html#sys.float_info.max_exp
+  name: max_exp
+  uid: sys.float_info.max_exp
+- fullName: sys.float_info.min
+  href: https://docs.python.org/3/library/sys.html#sys.float_info.min
+  name: min
+  uid: sys.float_info.min
+- fullName: sys.float_info.min_10_exp
+  href: https://docs.python.org/3/library/sys.html#sys.float_info.min_10_exp
+  name: min_10_exp
+  uid: sys.float_info.min_10_exp
+- fullName: sys.float_info.min_exp
+  href: https://docs.python.org/3/library/sys.html#sys.float_info.min_exp
+  name: min_exp
+  uid: sys.float_info.min_exp
+- fullName: sys.float_info.radix
+  href: https://docs.python.org/3/library/sys.html#sys.float_info.radix
+  name: radix
+  uid: sys.float_info.radix
+- fullName: sys.float_info.rounds
+  href: https://docs.python.org/3/library/sys.html#sys.float_info.rounds
+  name: rounds
+  uid: sys.float_info.rounds
+- fullName: sys.hash_info.algorithm
+  href: https://docs.python.org/3/library/sys.html#sys.hash_info.algorithm
+  name: algorithm
+  uid: sys.hash_info.algorithm
+- fullName: sys.hash_info.hash_bits
+  href: https://docs.python.org/3/library/sys.html#sys.hash_info.hash_bits
+  name: hash_bits
+  uid: sys.hash_info.hash_bits
+- fullName: sys.hash_info.imag
+  href: https://docs.python.org/3/library/sys.html#sys.hash_info.imag
+  name: imag
+  uid: sys.hash_info.imag
+- fullName: sys.hash_info.inf
+  href: https://docs.python.org/3/library/sys.html#sys.hash_info.inf
+  name: inf
+  uid: sys.hash_info.inf
+- fullName: sys.hash_info.modulus
+  href: https://docs.python.org/3/library/sys.html#sys.hash_info.modulus
+  name: modulus
+  uid: sys.hash_info.modulus
+- fullName: sys.hash_info.nan
+  href: https://docs.python.org/3/library/sys.html#sys.hash_info.nan
+  name: nan
+  uid: sys.hash_info.nan
+- fullName: sys.hash_info.seed_bits
+  href: https://docs.python.org/3/library/sys.html#sys.hash_info.seed_bits
+  name: seed_bits
+  uid: sys.hash_info.seed_bits
+- fullName: sys.hash_info.width
+  href: https://docs.python.org/3/library/sys.html#sys.hash_info.width
+  name: width
+  uid: sys.hash_info.width
+- fullName: sys.int_info.bits_per_digit
+  href: https://docs.python.org/3/library/sys.html#sys.int_info.bits_per_digit
+  name: bits_per_digit
+  uid: sys.int_info.bits_per_digit
+- fullName: sys.int_info.default_max_str_digits
+  href: https://docs.python.org/3/library/sys.html#sys.int_info.default_max_str_digits
+  name: default_max_str_digits
+  uid: sys.int_info.default_max_str_digits
+- fullName: sys.int_info.sizeof_digit
+  href: https://docs.python.org/3/library/sys.html#sys.int_info.sizeof_digit
+  name: sizeof_digit
+  uid: sys.int_info.sizeof_digit
+- fullName: sys.int_info.str_digits_check_threshold
+  href: https://docs.python.org/3/library/sys.html#sys.int_info.str_digits_check_threshold
+  name: str_digits_check_threshold
+  uid: sys.int_info.str_digits_check_threshold
+- fullName: sys.thread_info.lock
+  href: https://docs.python.org/3/library/sys.html#sys.thread_info.lock
+  name: lock
+  uid: sys.thread_info.lock
+- fullName: sys.thread_info.name
+  href: https://docs.python.org/3/library/sys.html#sys.thread_info.name
+  name: name
+  uid: sys.thread_info.name
+- fullName: sys.thread_info.version
+  href: https://docs.python.org/3/library/sys.html#sys.thread_info.version
+  name: version
+  uid: sys.thread_info.version
 - fullName: tarfile.FilterError.tarinfo
   href: https://docs.python.org/3/library/tarfile.html#tarfile.FilterError.tarinfo
   name: tarinfo
@@ -4855,6 +5059,10 @@ references:
   href: https://docs.python.org/3/library/unittest.mock.html#unittest.mock.Mock.side_effect
   name: side_effect
   uid: unittest.mock.Mock.side_effect
+- fullName: urllib.error.ContentTooShortError.content
+  href: https://docs.python.org/3/library/urllib.error.html#urllib.error.ContentTooShortError.content
+  name: content
+  uid: urllib.error.ContentTooShortError.content
 - fullName: urllib.error.HTTPError.code
   href: https://docs.python.org/3/library/urllib.error.html#urllib.error.HTTPError.code
   name: code
@@ -20507,6 +20715,30 @@ references:
   href: https://docs.python.org/3/library/locale.html#locale.YESEXPR
   name: YESEXPR
   uid: locale.YESEXPR
+- fullName: logging.CRITICAL
+  href: https://docs.python.org/3/library/logging.html#logging.CRITICAL
+  name: CRITICAL
+  uid: logging.CRITICAL
+- fullName: logging.DEBUG
+  href: https://docs.python.org/3/library/logging.html#logging.DEBUG
+  name: DEBUG
+  uid: logging.DEBUG
+- fullName: logging.ERROR
+  href: https://docs.python.org/3/library/logging.html#logging.ERROR
+  name: ERROR
+  uid: logging.ERROR
+- fullName: logging.INFO
+  href: https://docs.python.org/3/library/logging.html#logging.INFO
+  name: INFO
+  uid: logging.INFO
+- fullName: logging.NOTSET
+  href: https://docs.python.org/3/library/logging.html#logging.NOTSET
+  name: NOTSET
+  uid: logging.NOTSET
+- fullName: logging.WARNING
+  href: https://docs.python.org/3/library/logging.html#logging.WARNING
+  name: WARNING
+  uid: logging.WARNING
 - fullName: marshal.version
   href: https://docs.python.org/3/library/marshal.html#marshal.version
   name: version
@@ -21227,10 +21459,18 @@ references:
   href: https://docs.python.org/3/library/os.html#os.SEEK_CUR
   name: SEEK_CUR
   uid: os.SEEK_CUR
+- fullName: os.SEEK_DATA
+  href: https://docs.python.org/3/library/os.html#os.SEEK_DATA
+  name: SEEK_DATA
+  uid: os.SEEK_DATA
 - fullName: os.SEEK_END
   href: https://docs.python.org/3/library/os.html#os.SEEK_END
   name: SEEK_END
   uid: os.SEEK_END
+- fullName: os.SEEK_HOLE
+  href: https://docs.python.org/3/library/os.html#os.SEEK_HOLE
+  name: SEEK_HOLE
+  uid: os.SEEK_HOLE
 - fullName: os.SEEK_SET
   href: https://docs.python.org/3/library/os.html#os.SEEK_SET
   name: SEEK_SET
@@ -21587,6 +21827,14 @@ references:
   href: https://docs.python.org/3/library/resource.html#resource.RUSAGE_THREAD
   name: RUSAGE_THREAD
   uid: resource.RUSAGE_THREAD
+- fullName: selectors.EVENT_READ
+  href: https://docs.python.org/3/library/selectors.html#selectors.EVENT_READ
+  name: EVENT_READ
+  uid: selectors.EVENT_READ
+- fullName: selectors.EVENT_WRITE
+  href: https://docs.python.org/3/library/selectors.html#selectors.EVENT_WRITE
+  name: EVENT_WRITE
+  uid: selectors.EVENT_WRITE
 - fullName: signal.CTRL_BREAK_EVENT
   href: https://docs.python.org/3/library/signal.html#signal.CTRL_BREAK_EVENT
   name: CTRL_BREAK_EVENT
@@ -38247,20 +38495,3 @@ references:
   href: https://docs.python.org/3/library/zoneinfo.html#zoneinfo.ZoneInfo
   name: ZoneInfo
   uid: zoneinfo.ZoneInfo
-- fullName: boolean
-  href: https://docs.python.org/3/library/stdtypes.html#bltin-boolean-values
-  name: boolean
-  uid: boolean
-- fullName: Union
-  href: https://docs.python.org/3/library/typing.html#typing.Union
-  name: Union
-  uid: Union
-- fullName: function
-  href: https://docs.python.org/3/reference/compound_stmts.html#function
-  name: function
-  uid: function
-- fullName: builtins.object
-  href: https://docs.python.org/3/library/builtins.html
-  name: builtins.object
-  uid: builtins.object
-  
