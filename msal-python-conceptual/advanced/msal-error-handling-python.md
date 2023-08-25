@@ -64,7 +64,7 @@ In MSAL for Python, exceptions are rare because most errors are handled by retur
 
 ## Conditional Access and claims challenges
 
-When getting tokens silently, your application may receive errors when a [Conditional Access claims challenge](../../v2-conditional-access-dev-guide.md) such as MFA policy is required by an API you're trying to access.
+When getting tokens silently, your application may receive errors when a [Conditional Access claims challenge](/azure/active-directory/develop/v2-conditional-access-dev-guide) such as MFA policy is required by an API you're trying to access.
 
 The pattern for handling this error is to interactively acquire a token using MSAL. This prompts the user and gives them the opportunity to satisfy the required Conditional Access policy.
 
