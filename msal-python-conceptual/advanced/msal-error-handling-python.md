@@ -4,7 +4,27 @@ description: Learn how to handle errors and exceptions, Conditional Access claim
 ---
 # Handle errors and exceptions in MSAL for Python
 
-[!INCLUDE [Active directory error handling introduction](/azure/active-directory/develop/includes/error-handling-and-tips/error-handling-introduction.md)]
+The Microsoft Authentication Library (MSAL) apps generate log messages that can help diagnose issues. An app can configure logging with a few lines of code, and have custom control over the level of detail and whether or not personal and organizational data is logged. We recommend you create an MSAL logging implementation and provide a way for users to submit logs when they have authentication issues.
+
+## Logging levels
+
+MSAL provides several levels of logging detail:
+
+- LogAlways: No level filtering is done on this log level. Log messages of all levels will be logged.
+- Critical: Logs that describe an unrecoverable application or system crash, or a catastrophic failure that requires immediate attention.
+- Error: Indicates something has gone wrong and an error was generated. Used for debugging and identifying problems.
+- Warning: There hasn't necessarily been an error or failure, but are intended for diagnostics and pinpointing problems.
+- Informational: MSAL will log events intended for informational purposes not necessarily intended for debugging.
+- Verbose (Default): MSAL logs the full details of library behavior.
+
+> [!NOTE]
+> Not all log levels are available for all MSAL SDK's
+
+## Personal and organizational data
+
+By default, the MSAL logger doesn't capture any highly sensitive personal or organizational data. The library provides the option to enable logging personal and organizational data if you decide to do so.
+
+The following sections provide more details about MSAL error logging for your application.
 
 ## Error handling in MSAL for Python
 
@@ -38,11 +58,11 @@ else:
 
 ```
 
-When an error is returned, the `"error_description"` key also contains a human-readable message, and there is typically also an `"error_code"` key which contains a machine-readable Microsoft identity platform error code. For more information about the various Microsoft identity platform error codes, see [Authentication and authorization error codes](/azure/active-directory/develop/reference-error-codes.md).
+When an error is returned, the `"error_description"` key also contains a human-readable message, and there is typically also an `"error_code"` key which contains a machine-readable Microsoft identity platform error code. For more information about the various Microsoft identity platform error codes, see [Authentication and authorization error codes](/azure/active-directory/develop/reference-error-codes).
 
 In MSAL for Python, exceptions are rare because most errors are handled by returning an error value. The `ValueError` exception is only thrown when there's an issue with how you're attempting to use the library, such as when API parameter(s) are malformed.
 
-[!INCLUDE [Active directory error handling claims challenges](/azure/active-directory/develop/includes/error-handling-and-tips/error-handling-claims-challenges.md)]
+[!INCLUDE [Active directory error handling claims challenges](/azure/active-directory/develop/includes/error-handling-and-tips/error-handling-claims-challenges)]
 
 
 ## Retrying after errors and exceptions

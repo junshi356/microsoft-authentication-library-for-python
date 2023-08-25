@@ -13,19 +13,19 @@
   - name: Using MSAL Python with Web Account Manager
     href: advanced/wam.md
   - name: Migrate to MSAL Python
-    href: migrate-python-adal-msal.md
+    href: advanced/migrate-python-adal-msal.md
   - name: Logging
-    href: msal-logging-python.md
+    href: advanced/msal-logging-python.md
   - name: Handle errors and exceptions
-    href: msal-error-handling-python.md
+    href: advanced/msal-error-handling-python.md
   - name: Conditional access
     href: advanced/conditional-access.md
   - name: Token cache serialization
-    href: msal-python-token-cache-serialization.md
+    href: advanced/msal-python-token-cache-serialization.md
   - name: Developing an Azure AD B2C app with MSAL Python
     href: advanced/aad-b2c.md
   - name: Active Directory Federation Services (ADFS) Support
-    href: msal-python-adfs-support.md
+    href: advanced/msal-python-adfs-support.md
   - name: National clouds
     href: /azure/active-directory/develop/msal-national-cloud?tabs=python
   - name: Username and password authentication
