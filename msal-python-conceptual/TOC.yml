@@ -34,10 +34,6 @@
     href: advanced/client-credentials.md
   - name: Handle SameSite cookie changes in Chrome
     href: /azure/active-directory/develop/howto-handle-samesite-cookie-changes-chrome-browser?tabs=python
-  - name: Migrate existing refresh tokens into MSAL Python
-    href: advanced/migrate.md
-  - name: Logging
-    href: advanced/logging.md
   - name: Instance metadata caching
     href: advanced/instance-metadata-caching.md
   - name: Client capabilities
