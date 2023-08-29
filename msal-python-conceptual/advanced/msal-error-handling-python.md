@@ -2,31 +2,8 @@
 title: Handle errors and exceptions in MSAL for Python
 description: Learn how to handle errors and exceptions, Conditional Access claims challenges, and retries in MSAL for Python applications.
 ---
+
 # Handle errors and exceptions in MSAL for Python
-
-The Microsoft Authentication Library (MSAL) apps generate log messages that can help diagnose issues. An app can configure logging with a few lines of code, and have custom control over the level of detail and whether or not personal and organizational data is logged. We recommend you create an MSAL logging implementation and provide a way for users to submit logs when they have authentication issues.
-
-## Logging levels
-
-MSAL provides several levels of logging detail:
-
-- LogAlways: No level filtering is done on this log level. Log messages of all levels will be logged.
-- Critical: Logs that describe an unrecoverable application or system crash, or a catastrophic failure that requires immediate attention.
-- Error: Indicates something has gone wrong and an error was generated. Used for debugging and identifying problems.
-- Warning: There hasn't necessarily been an error or failure, but are intended for diagnostics and pinpointing problems.
-- Informational: MSAL will log events intended for informational purposes not necessarily intended for debugging.
-- Verbose (Default): MSAL logs the full details of library behavior.
-
-> [!NOTE]
-> Not all log levels are available for all MSAL SDK's
-
-## Personal and organizational data
-
-By default, the MSAL logger doesn't capture any highly sensitive personal or organizational data. The library provides the option to enable logging personal and organizational data if you decide to do so.
-
-The following sections provide more details about MSAL error logging for your application.
-
-## Error handling in MSAL for Python
 
 In MSAL for Python, most errors are conveyed as a return value from the API call. The error is represented as a dictionary containing the JSON response from the Microsoft identity platform.
 
@@ -78,7 +55,7 @@ For example the network can go down or the server is overloaded.
 
 MSAL Python 1.11+ automatically performs one retry attempt for you.
 You may customize this behavior by following
-[this instruction](https://msal-python.readthedocs.io/en/latest/#msal.ConfidentialClientApplication.params.http_client).
+[the `http client` customization instruction](xref:msal.application.ConfidentialClientApplication).
 
 ### HTTP 429
 
@@ -86,18 +63,17 @@ When the Service Token Server (STS) is overloaded with too many requests,
 it returns HTTP error 429 with a hint about how long until you can try again in the `Retry-After` response field.
 
 Your app was expected to throttle the subsequent requests, and only retry after the specified period.
-That was not an easy task.
 
-MSAL Python 1.16+ made it easy for you, in that your app could blindly retry in any given time
-(say, whenever the end user clicks the sign-in button again),
+MSAL Python 1.16+ makes it easy for you to retry an authentication request on-demand
+(for example, whenever the end-user clicks the sign-in button again),
 MSAL Python 1.16+ would automatically throttle those retry attempts by returning same error response from an HTTP cache,
 and only sending out a real HTTP call when that call is attempted after the specified period.
 
 By default, this throttle mechanism works by saving throttle information into a built-in in-memory HTTP cache.
 You may provide your own `dict`-like object as the HTTP cache, which you can control how to persist its content.
-See [MSAL Python's API document](https://msal-python.readthedocs.io/en/latest/#msal.PublicClientApplication.params.http_cache)
+See [MSAL Python API documentation](xref:msal.application.PublicClientApplication)
 for more details.
 
 ## Next steps
 
-Consider enabling [Logging in MSAL for Python](msal-logging-python.md) to help you diagnose and debug issues.
+- Consider enabling [Logging in MSAL for Python](msal-logging-python.md) to help you diagnose and debug issues.

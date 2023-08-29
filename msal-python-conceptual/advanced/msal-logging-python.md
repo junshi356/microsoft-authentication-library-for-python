@@ -11,15 +11,15 @@ The Microsoft Authentication Library (MSAL) apps generate log messages that can 
 
 MSAL provides several levels of logging detail:
 
-- LogAlways: No level filtering is done on this log level. Log messages of all levels will be logged.
-- Critical: Logs that describe an unrecoverable application or system crash, or a catastrophic failure that requires immediate attention.
-- Error: Indicates something has gone wrong and an error was generated. Used for debugging and identifying problems.
-- Warning: There hasn't necessarily been an error or failure, but are intended for diagnostics and pinpointing problems.
-- Informational: MSAL will log events intended for informational purposes not necessarily intended for debugging.
-- Verbose (Default): MSAL logs the full details of library behavior.
+- `LogAlways`: No level filtering is done on this log level. Log messages of all levels will be logged.
+- `Critical`: Logs that describe an unrecoverable application or system crash, or a catastrophic failure that requires immediate attention.
+- `Error`: Indicates something has gone wrong and an error was generated. Used for debugging and identifying problems.
+- `Warning`: There hasn't necessarily been an error or failure, but are intended for diagnostics and pinpointing problems.
+- `Informational`: MSAL will log events intended for informational purposes not necessarily intended for debugging.
+- `Verbose` (Default): MSAL logs the full details of library behavior.
 
 > [!NOTE]
-> Not all log levels are available for all MSAL SDK's
+> Not all log levels are available for all MSAL libraries.
 
 ## Personal and organizational data
 
