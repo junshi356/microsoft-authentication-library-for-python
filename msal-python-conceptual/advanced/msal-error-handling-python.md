@@ -55,7 +55,7 @@ For example the network can go down or the server is overloaded.
 
 MSAL Python 1.11+ automatically performs one retry attempt for you.
 You may customize this behavior by following
-[the `http client` customization instruction](xref:msal.application.ConfidentialClientApplication).
+[the `http client` customization instructions](xref:msal.application.ConfidentialClientApplication).
 
 ### HTTP 429
 
