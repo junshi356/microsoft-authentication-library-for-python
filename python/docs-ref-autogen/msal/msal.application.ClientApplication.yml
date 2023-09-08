@@ -53,7 +53,7 @@ constructor:
       \n   }\n   ````"
     defaultValue: None
     types:
-    - <xref:Union>[<xref:str>, <xref:dict>]
+    - <xref:typing.Union>[<xref:str>, <xref:dict>]
   - name: client_claims
     description: "*Added in version 0.5.0*:\nIt is a dictionary of extra claims that\
       \ would be signed by\nby this <xref:msal.application.ConfidentialClientApplication>\
