@@ -16,7 +16,7 @@ constructor:
     validate_authority=True, token_cache=None, http_client=None, verify=True, proxies=None,
     timeout=None, client_claims=None, app_name=None, app_version=None, client_capabilities=None,
     azure_region=None, exclude_scopes=None, http_cache=None, instance_discovery=None,
-    allow_broker=None)
+    allow_broker=None, enable_pii_log=None)
   parameters:
   - name: client_id
     description: Your app has a client_id after you register it on AAD.
@@ -30,28 +30,32 @@ constructor:
       \ in this form:\n\n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\"\
       : [], \"dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\", \"language\"\
       : \"default\", \"force\": false, \"linenos\": false} -->\n\n````default\n\n\
-      \   {\n       \"private_key\": \"...-----BEGIN PRIVATE KEY-----...\",\n    \
-      \   \"thumbprint\": \"A1B2C3D4E5F6...\",\n       \"public_certificate\": \"\
-      ...-----BEGIN CERTIFICATE-----... (Optional. See below.)\",\n       \"passphrase\"\
+      \   {\n       \"private_key\": \"...-----BEGIN PRIVATE KEY-----... in PEM format\"\
+      ,\n       \"thumbprint\": \"A1B2C3D4E5F6...\",\n       \"public_certificate\"\
+      : \"...-----BEGIN CERTIFICATE-----... (Optional. See below.)\",\n       \"passphrase\"\
       : \"Passphrase if the private_key is encrypted (Optional. Added in version 1.6.0)\"\
-      ,\n   }\n   ````\n\n*Added in version 0.5.0*:\npublic_certificate (optional)\
-      \ is public key certificate\nwhich will be sent through 'x5c' JWT header only\
-      \ for\nsubject name and issuer authentication to support cert auto rolls.\n\n\
-      Per [specs](https://tools.ietf.org/html/rfc7515#section-4.1.6),\n\"the certificate\
-      \ containing\nthe public key corresponding to the key used to digitally sign\
-      \ the\nJWS MUST be the first certificate.  This MAY be followed by\nadditional\
-      \ certificates, with each subsequent certificate being the\none used to certify\
-      \ the previous one.\"\nHowever, your certificate's issuer may use a different\
-      \ order.\nSo, if your attempt ends up with an error AADSTS700027 -\n\"The provided\
-      \ signature value did not match the expected signature value\",\nyou may try\
-      \ use only the leaf cert (in PEM/str format) instead.\n\n*Added in version 1.13.0*:\n\
-      It can also be a completely pre-signed assertion that you've assembled yourself.\n\
-      Simply pass a container containing only the key \"client_assertion\", like this:\n\
-      \n<!-- literal_block {\"ids\": [], \"classes\": [], \"names\": [], \"dupnames\"\
-      : [], \"backrefs\": [], \"xml:space\": \"preserve\", \"language\": \"default\"\
-      , \"force\": false, \"linenos\": false} -->\n\n````default\n\n   {\n       \"\
-      client_assertion\": \"...a JWT with claims aud, exp, iss, jti, nbf, and sub...\"\
-      \n   }\n   ````"
+      ,\n   }\n   ````\n\nMSAL Python requires a \"private_key\" in PEM format.\n\
+      If your cert is in a PKCS12 (.pfx) format, you can also\n[convert it to PEM\
+      \ and get the thumbprint](https://github.com/Azure/azure-sdk-for-python/blob/07d10639d7e47f4852eaeb74aef5d569db499d6e/sdk/identity/azure-identity/azure/identity/_credentials/certificate.py#L101-L123).\n\
+      \nThe thumbprint is available in your app's registration in Azure Portal.\n\
+      Alternatively, you can [calculate the thumbprint](https://github.com/Azure/azure-sdk-for-python/blob/07d10639d7e47f4852eaeb74aef5d569db499d6e/sdk/identity/azure-identity/azure/identity/_credentials/certificate.py#L94-L97).\n\
+      \n*Added in version 0.5.0*:\npublic_certificate (optional) is public key certificate\n\
+      which will be sent through 'x5c' JWT header only for\nsubject name and issuer\
+      \ authentication to support cert auto rolls.\n\nPer [specs](https://tools.ietf.org/html/rfc7515#section-4.1.6),\n\
+      \"the certificate containing\nthe public key corresponding to the key used to\
+      \ digitally sign the\nJWS MUST be the first certificate.  This MAY be followed\
+      \ by\nadditional certificates, with each subsequent certificate being the\n\
+      one used to certify the previous one.\"\nHowever, your certificate's issuer\
+      \ may use a different order.\nSo, if your attempt ends up with an error AADSTS700027\
+      \ -\n\"The provided signature value did not match the expected signature value\"\
+      ,\nyou may try use only the leaf cert (in PEM/str format) instead.\n\n*Added\
+      \ in version 1.13.0*:\nIt can also be a completely pre-signed assertion that\
+      \ you've assembled yourself.\nSimply pass a container containing only the key\
+      \ \"client_assertion\", like this:\n\n<!-- literal_block {\"ids\": [], \"classes\"\
+      : [], \"names\": [], \"dupnames\": [], \"backrefs\": [], \"xml:space\": \"preserve\"\
+      , \"language\": \"default\", \"force\": false, \"linenos\": false} -->\n\n````default\n\
+      \n   {\n       \"client_assertion\": \"...a JWT with claims aud, exp, iss, jti,\
+      \ nbf, and sub...\"\n   }\n   ````"
     defaultValue: None
     types:
     - <xref:typing.Union>[<xref:str>, <xref:dict>]
@@ -313,6 +317,18 @@ constructor:
       \ following methods:: acquire_token_interactive(), acquire_token_by_username_password(),\
       \ acquire_token_silent() (or acquire_token_silent_with_error()). \n\n  * AAD\
       \ and MSA accounts (i.e. Non-ADFS, non-B2C) \n\nNew in version 1.20.0."
+    defaultValue: None
+    types:
+    - <xref:boolean>
+  - name: enable_pii_log
+    description: 'When enabled, logs may include PII (Personal Identifiable Information).
+
+      This can be useful in troubleshooting broker behaviors.
+
+      The default behavior is False.
+
+
+      New in version 1.24.0.'
     defaultValue: None
     types:
     - <xref:boolean>
