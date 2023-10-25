@@ -1355,6 +1355,10 @@ references:
   href: https://docs.python.org/3/library/asyncio-stream.html#asyncio.StreamWriter.transport
   name: transport
   uid: asyncio.StreamWriter.transport
+- fullName: asyncio.loop.slow_callback_duration
+  href: https://docs.python.org/3/library/asyncio-eventloop.html#asyncio.loop.slow_callback_duration
+  name: slow_callback_duration
+  uid: asyncio.loop.slow_callback_duration
 - fullName: asyncio.subprocess.Process.pid
   href: https://docs.python.org/3/library/asyncio-subprocess.html#asyncio.subprocess.Process.pid
   name: pid
@@ -23235,6 +23239,14 @@ references:
   href: https://docs.python.org/3/library/sys.html#sys.modules
   name: modules
   uid: sys.modules
+- fullName: sys.monitoring.DISABLE
+  href: https://docs.python.org/3/library/sys.monitoring.html#sys.monitoring.DISABLE
+  name: DISABLE
+  uid: sys.monitoring.DISABLE
+- fullName: sys.monitoring.MISSING
+  href: https://docs.python.org/3/library/sys.monitoring.html#sys.monitoring.MISSING
+  name: MISSING
+  uid: sys.monitoring.MISSING
 - fullName: sys.orig_argv
   href: https://docs.python.org/3/library/sys.html#sys.orig_argv
   name: orig_argv
@@ -23347,6 +23359,18 @@ references:
   href: https://docs.python.org/3/library/tempfile.html#tempfile.tempdir
   name: tempdir
   uid: tempfile.tempdir
+- fullName: termios.TCSADRAIN
+  href: https://docs.python.org/3/library/termios.html#termios.TCSADRAIN
+  name: TCSADRAIN
+  uid: termios.TCSADRAIN
+- fullName: termios.TCSAFLUSH
+  href: https://docs.python.org/3/library/termios.html#termios.TCSAFLUSH
+  name: TCSAFLUSH
+  uid: termios.TCSAFLUSH
+- fullName: termios.TCSANOW
+  href: https://docs.python.org/3/library/termios.html#termios.TCSANOW
+  name: TCSANOW
+  uid: termios.TCSANOW
 - fullName: test.support.ALWAYS_EQ
   href: https://docs.python.org/3/library/test.html#test.support.ALWAYS_EQ
   name: ALWAYS_EQ
@@ -35395,6 +35419,10 @@ references:
   href: https://docs.python.org/3/library/code.html#code.InteractiveInterpreter
   name: InteractiveInterpreter
   uid: code.InteractiveInterpreter
+- fullName: codecs.Codec
+  href: https://docs.python.org/3/library/codecs.html#codecs.Codec
+  name: Codec
+  uid: codecs.Codec
 - fullName: codecs.CodecInfo
   href: https://docs.python.org/3/library/codecs.html#codecs.CodecInfo
   name: CodecInfo
