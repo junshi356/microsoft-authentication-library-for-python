@@ -7399,10 +7399,34 @@ references:
   href: https://docs.python.org/3/library/bz2.html#bz2.BZ2Decompressor.decompress
   name: decompress
   uid: bz2.BZ2Decompressor.decompress
+- fullName: bz2.BZ2File.fileno
+  href: https://docs.python.org/3/library/bz2.html#bz2.BZ2File.fileno
+  name: fileno
+  uid: bz2.BZ2File.fileno
 - fullName: bz2.BZ2File.peek
   href: https://docs.python.org/3/library/bz2.html#bz2.BZ2File.peek
   name: peek
   uid: bz2.BZ2File.peek
+- fullName: bz2.BZ2File.read1
+  href: https://docs.python.org/3/library/bz2.html#bz2.BZ2File.read1
+  name: read1
+  uid: bz2.BZ2File.read1
+- fullName: bz2.BZ2File.readable
+  href: https://docs.python.org/3/library/bz2.html#bz2.BZ2File.readable
+  name: readable
+  uid: bz2.BZ2File.readable
+- fullName: bz2.BZ2File.readinto
+  href: https://docs.python.org/3/library/bz2.html#bz2.BZ2File.readinto
+  name: readinto
+  uid: bz2.BZ2File.readinto
+- fullName: bz2.BZ2File.seekable
+  href: https://docs.python.org/3/library/bz2.html#bz2.BZ2File.seekable
+  name: seekable
+  uid: bz2.BZ2File.seekable
+- fullName: bz2.BZ2File.writable
+  href: https://docs.python.org/3/library/bz2.html#bz2.BZ2File.writable
+  name: writable
+  uid: bz2.BZ2File.writable
 - fullName: calendar.Calendar.itermonthdates
   href: https://docs.python.org/3/library/calendar.html#calendar.Calendar.itermonthdates
   name: itermonthdates
