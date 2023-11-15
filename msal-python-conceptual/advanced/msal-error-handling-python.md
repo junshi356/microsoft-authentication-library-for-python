@@ -50,7 +50,7 @@ In certain cases when calling an API requiring Conditional Access, you can recei
 
 ## Retrying after errors and exceptions
 
-MSAL makes HTTP calls to the Azure AD service, and occasionally failures can occur.
+MSAL makes HTTP calls to the Microsoft Entra service, and occasionally failures can occur.
 For example the network can go down or the server is overloaded.
 
 MSAL Python 1.11+ automatically performs one retry attempt for you.
