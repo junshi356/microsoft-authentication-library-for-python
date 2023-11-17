@@ -15,7 +15,7 @@ ADAL works with the Azure Active Directory (Azure AD) v1.0 endpoint. The Microso
 
 Supports:
 
-- Work and school accounts (Azure AD provisioned accounts)
+- Work and school accounts (Microsoft Entra ID provisioned accounts)
 - Personal accounts (such as Outlook.com or Hotmail.com)
 - Your customers who bring their own email or social identity (such as LinkedIn, Facebook, Google) via the Azure AD B2C offering
 
