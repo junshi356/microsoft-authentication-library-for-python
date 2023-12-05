@@ -32,7 +32,10 @@ constructor:
     description: 'This setting is only effective if your app is running on Windows
       10+.
 
-      This parameter defaults to None, which means MSAL will not utilize a broker.'
+      This parameter defaults to None, which means MSAL will not utilize a broker.
+
+
+      New in MSAL Python 1.25.0.'
     isRequired: true
     types:
     - <xref:boolean>
@@ -88,7 +91,8 @@ methods:
     `ms-appx-web://Microsoft.AAD.BrokerPlugin/YOUR_CLIENT_ID`'
   signature: acquire_token_interactive(scopes, prompt=None, login_hint=None, domain_hint=None,
     claims_challenge=None, timeout=None, port=None, extra_scopes_to_consent=None,
-    max_age=None, parent_window_handle=None, on_before_launching_ui=None, **kwargs)
+    max_age=None, parent_window_handle=None, on_before_launching_ui=None, auth_scheme=None,
+    **kwargs)
   parameters:
   - name: scopes
     description: It is a list of case-sensitive strings.
@@ -215,6 +219,16 @@ methods:
     defaultValue: None
     types:
     - <xref:function>
+  - name: auth_scheme
+    description: 'You can provide an `msal.auth_scheme.PopAuthScheme` object
+
+      so that MSAL will get a Proof-of-Possession (POP) token for you.
+
+
+      New in version 1.26.0.'
+    defaultValue: None
+    types:
+    - <xref:object>
   return:
     description: "* A dict containing no \"error\" key, and typically contains an\
       \ \"access_token\" key. \n\n* A dict containing an \"error\" key, when token\
