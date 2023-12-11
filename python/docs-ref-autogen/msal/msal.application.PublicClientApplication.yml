@@ -5,12 +5,40 @@ fullName: msal.application.PublicClientApplication
 module: msal.application
 inheritances:
 - msal.application.ClientApplication
-summary: 'Same as <xref:ClientApplication.__init__>,
-
-  except that `client_credential` parameter shall remain `None`.'
+summary: "Same as <xref:ClientApplication.__init__>,\nexcept that `client_credential`\
+  \ parameter shall remain `None`.\n\n> [!NOTE]\n> You may set enable_broker_on_windows\
+  \ to True.\n>\n> \n>\n> What is a broker, and why use it?\n>\n> \n>\n> A broker\
+  \ is a component installed on your device.\n>\n> Broker implicitly gives your device\
+  \ an identity. By using a broker,\n>\n> your device becomes a factor that can satisfy\
+  \ MFA (Multi-factor authentication).\n>\n> This factor would become mandatory\n\
+  >\n> if a tenant's admin enables a corresponding Conditional Access (CA) policy.\n\
+  >\n> The broker's presence allows Microsoft identity platform\n>\n> to have higher\
+  \ confidence that the tokens are being issued to your device,\n>\n> and that is\
+  \ more secure.\n>\n> \n>\n> An additional benefit of broker is,\n>\n> it runs as\
+  \ a long-lived process with your device's OS,\n>\n> and maintains its own cache,\n\
+  >\n> so that your broker-enabled apps (even a CLI)\n>\n> could automatically SSO\
+  \ from a previously established signed-in session.\n>\n> \n>\n> ADFS and B2C do\
+  \ not support broker.\n>\n> MSAL will automatically fallback to use browser.\n>\n\
+  > \n>\n> You shall only enable broker when your app:\n>\n> \n>\n> is running on\
+  \ supported platforms,\n>\n> and already registered their corresponding redirect_uri\n\
+  >\n> \n>\n> ms-appx-web://Microsoft.AAD.BrokerPlugin/your_client_id\n>\n> if your\
+  \ app is expected to run on Windows 10+\n>\n> \n>\n> installed broker dependency,\n\
+  >\n> e.g. pip install msal[broker]>=1.25,<2.\n>\n> \n>\n> tested with acquire_token_interactive()\
+  \ and acquire_token_silent().\n>"
 constructor:
   syntax: PublicClientApplication(client_id, client_credential=None, **kwargs)
   parameters:
+  - name: enable_broker_on_windows
+    description: 'This setting is only effective if your app is running on Windows
+      10+.
+
+      This parameter defaults to None, which means MSAL will not utilize a broker.
+
+
+      New in MSAL Python 1.25.0.'
+    isRequired: true
+    types:
+    - <xref:boolean>
   - name: client_id
   - name: client_credential
     defaultValue: None
@@ -63,7 +91,8 @@ methods:
     `ms-appx-web://Microsoft.AAD.BrokerPlugin/YOUR_CLIENT_ID`'
   signature: acquire_token_interactive(scopes, prompt=None, login_hint=None, domain_hint=None,
     claims_challenge=None, timeout=None, port=None, extra_scopes_to_consent=None,
-    max_age=None, parent_window_handle=None, on_before_launching_ui=None, **kwargs)
+    max_age=None, parent_window_handle=None, on_before_launching_ui=None, auth_scheme=None,
+    **kwargs)
   parameters:
   - name: scopes
     description: It is a list of case-sensitive strings.
@@ -190,6 +219,16 @@ methods:
     defaultValue: None
     types:
     - <xref:function>
+  - name: auth_scheme
+    description: 'You can provide an `msal.auth_scheme.PopAuthScheme` object
+
+      so that MSAL will get a Proof-of-Possession (POP) token for you.
+
+
+      New in version 1.26.0.'
+    defaultValue: None
+    types:
+    - <xref:object>
   return:
     description: "* A dict containing no \"error\" key, and typically contains an\
       \ \"access_token\" key. \n\n* A dict containing an \"error\" key, when token\

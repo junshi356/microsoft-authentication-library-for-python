@@ -9,7 +9,7 @@ Active Directory Federation Services (AD FS) in Windows Server enables you to ad
 
 There are usually two ways of authenticating against AD FS:
 
-- MSAL Python talks to Azure Active Directory, which itself is federated with other identity providers. The federation happens through AD FS. MSAL Python connects to Azure AD, which signs in users that are managed in Azure AD (managed users) or users managed by another identity provider such as AD FS (federated users). MSAL Python doesn't  know that a user is federated. It simply talks to Azure AD. The [authority](/azure/active-directory/develop/msal-client-application-configuration#authority) you use in this case is the usual authority (authority host name + tenant, common, or organizations).
+- MSAL Python talks to Microsoft Entra ID, which itself is federated with other identity providers. The federation happens through AD FS. MSAL Python connects to Microsoft Entra ID, which signs in users that are managed in Microsoft Entra ID (managed users) or users managed by another identity provider such as AD FS (federated users). MSAL Python doesn't  know that a user is federated. It simply talks to Microsoft Entra ID. The [authority](/azure/active-directory/develop/msal-client-application-configuration#authority) you use in this case is the usual authority (authority host name + tenant, common, or organizations).
 - MSAL Python talks directly to an AD FS authority. This is only supported by AD FS 2019 and later.
 
 ## Connect to Active Directory federated with AD FS
@@ -21,7 +21,7 @@ The following applies whether you connect directly to Active Directory Federatio
 When you call `acquire_token_by_authorization_code` or `acquire_token_by_device_flow`, the user experience is typically as follows:
 
 1. The user enters their account ID.
-2. Azure AD displays briefly the message "Taking you to your organization's page" and the user is redirected to the sign-in page of the identity provider. The sign-in page is usually customized with the logo of the organization.
+2. Microsoft Entra ID displays briefly the message "Taking you to your organization's page" and the user is redirected to the sign-in page of the identity provider. The sign-in page is usually customized with the logo of the organization.
 
 The supported AD FS versions in this federated scenario are:
 - Active Directory Federation Services FS v2
@@ -32,7 +32,7 @@ The supported AD FS versions in this federated scenario are:
 
 The following applies whether you connect directly to Active Directory Federation Services (AD FS) or through Active Directory.
 
-When you acquire a token using `acquire_token_by_username_password`, MSAL Python gets the identity provider to contact based on the username. MSAL Python gets a [SAML 1.1 token](/azure/active-directory/develop/reference-saml-tokens) from the identity provider, which it then provides to Azure AD which returns the JSON Web Token (JWT).
+When you acquire a token using `acquire_token_by_username_password`, MSAL Python gets the identity provider to contact based on the username. MSAL Python gets a [SAML 1.1 token](/azure/active-directory/develop/reference-saml-tokens) from the identity provider, which it then provides to Microsoft Entra which returns the JSON Web Token (JWT).
 
 ## Connecting directly to AD FS
 
