@@ -195,29 +195,17 @@ constructor:
     types:
     - <xref:list>[<xref:str>]
   - name: azure_region
-    description: "AAD provides regional endpoints for apps to opt in\nto keep their\
-      \ traffic remain inside that region.\n\nAs of 2021 May, regional service is\
-      \ only available for\n`acquire_token_for_client()` sent by any of the following\
-      \ scenarios:\n\n1. An app powered by a capable MSAL (MSAL Python 1.12+ will\
-      \ be provisioned) \n\n2. An app with managed identity, which is formerly known\
-      \ as MSI. (However MSAL Python does not support managed identity, so this one\
-      \ does not apply.) \n\n3. An app authenticated by [Subject Name/Issuer (SNI)](https://github.com/AzureAD/microsoft-authentication-library-for-python/issues/60).\
-      \ \n\n4. An app which already onboard to the region's allow-list. \n\nThis parameter\
-      \ defaults to None, which means region behavior remains off.\n\nApp developer\
-      \ can opt in to a regional endpoint,\nby provide its region name, such as \"\
-      westus\", \"eastus2\".\nYou can find a full list of regions by running\n`az\
-      \ account list-locations -o table`, or referencing to\n[this doc](https://docs.microsoft.com/en-us/dotnet/api/microsoft.azure.management.resourcemanager.fluent.core.region?view=azure-dotnet).\n\
-      \nAn app running inside Azure Functions and Azure VM can use a special keyword\n\
-      `ClientApplication.ATTEMPT_REGION_DISCOVERY` to auto-detect region.\n\n\n> [!NOTE]\n\
-      > Setting azure_region to non-None for an app running\n>\n> outside of Azure\
-      \ Function/VM could hang indefinitely.\n>\n> \n>\n> You should consider opting\
-      \ in/out region behavior on-demand,\n>\n> by loading azure_region=None or azure_region=\"\
-      westus\"\n>\n> or azure_region=True (which means opt-in and auto-detect)\n>\n\
-      > from your per-deployment configuration, and then do\n>\n> app = ConfidentialClientApplication(...,\
-      \ azure_region=azure_region).\n>\n> \n>\n> Alternatively, you can configure\
-      \ a short timeout,\n>\n> or provide a custom http_client which has a short timeout.\n\
-      >\n> That way, the latency would be under your control,\n>\n> but still less\
-      \ performant than opting out of region feature.\n>\n\nNew in version 1.12.0."
+    description: "(optional)\nInstructs MSAL to use the Entra regional token service.\
+      \ This legacy feature is only available to\nfirst-party applications. Only `acquire_token_for_client()`\
+      \ is supported.\n\nSupports 3 values:\n\n   `azure_region=None` - meaning no\
+      \ region is used. This is the default value.\n   `azure_region=\"some_region\"\
+      ` - meaning the specified region is used.\n   `azure_region=True` - meaning\
+      \ MSAL will try to auto-detect the region. This is not recommended.\n\n\n> [!NOTE]\n\
+      > Region auto-discovery has been tested on VMs and on Azure Functions. It is\
+      \ unreliable.\n>\n> Applications using this option should configure a short\
+      \ timeout.\n>\n> \n>\n> For more details and for the values of the region string\n\
+      >\n> \n>\n> see [https://learn.microsoft.com/entra/msal/dotnet/resources/region-discovery-troubleshooting](https://learn.microsoft.com/entra/msal/dotnet/resources/region-discovery-troubleshooting)\n\
+      >\n\nNew in version 1.12.0."
     defaultValue: None
     types:
     - <xref:str>
