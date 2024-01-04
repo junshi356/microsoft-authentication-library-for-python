@@ -1159,10 +1159,26 @@ references:
   href: https://docs.python.org/3/library/zoneinfo.html#zoneinfo.ZoneInfoNotFoundError
   name: ZoneInfoNotFoundError
   uid: zoneinfo.ZoneInfoNotFoundError
+- fullName: BaseException.__cause__
+  href: https://docs.python.org/3/library/exceptions.html#BaseException.__cause__
+  name: __cause__
+  uid: BaseException.__cause__
+- fullName: BaseException.__context__
+  href: https://docs.python.org/3/library/exceptions.html#BaseException.__context__
+  name: __context__
+  uid: BaseException.__context__
 - fullName: BaseException.__notes__
   href: https://docs.python.org/3/library/exceptions.html#BaseException.__notes__
   name: __notes__
   uid: BaseException.__notes__
+- fullName: BaseException.__suppress_context__
+  href: https://docs.python.org/3/library/exceptions.html#BaseException.__suppress_context__
+  name: __suppress_context__
+  uid: BaseException.__suppress_context__
+- fullName: BaseException.__traceback__
+  href: https://docs.python.org/3/library/exceptions.html#BaseException.__traceback__
+  name: __traceback__
+  uid: BaseException.__traceback__
 - fullName: BaseException.args
   href: https://docs.python.org/3/library/exceptions.html#BaseException.args
   name: args
@@ -2359,6 +2375,54 @@ references:
   href: https://docs.python.org/3/library/ftplib.html#ftplib.FTP_TLS.ssl_version
   name: ssl_version
   uid: ftplib.FTP_TLS.ssl_version
+- fullName: function.__annotations__
+  href: https://docs.python.org/3/reference/datamodel.html#function.__annotations__
+  name: __annotations__
+  uid: function.__annotations__
+- fullName: function.__closure__
+  href: https://docs.python.org/3/reference/datamodel.html#function.__closure__
+  name: __closure__
+  uid: function.__closure__
+- fullName: function.__code__
+  href: https://docs.python.org/3/reference/datamodel.html#function.__code__
+  name: __code__
+  uid: function.__code__
+- fullName: function.__defaults__
+  href: https://docs.python.org/3/reference/datamodel.html#function.__defaults__
+  name: __defaults__
+  uid: function.__defaults__
+- fullName: function.__dict__
+  href: https://docs.python.org/3/reference/datamodel.html#function.__dict__
+  name: __dict__
+  uid: function.__dict__
+- fullName: function.__doc__
+  href: https://docs.python.org/3/reference/datamodel.html#function.__doc__
+  name: __doc__
+  uid: function.__doc__
+- fullName: function.__globals__
+  href: https://docs.python.org/3/reference/datamodel.html#function.__globals__
+  name: __globals__
+  uid: function.__globals__
+- fullName: function.__kwdefaults__
+  href: https://docs.python.org/3/reference/datamodel.html#function.__kwdefaults__
+  name: __kwdefaults__
+  uid: function.__kwdefaults__
+- fullName: function.__module__
+  href: https://docs.python.org/3/reference/datamodel.html#function.__module__
+  name: __module__
+  uid: function.__module__
+- fullName: function.__name__
+  href: https://docs.python.org/3/reference/datamodel.html#function.__name__
+  name: __name__
+  uid: function.__name__
+- fullName: function.__qualname__
+  href: https://docs.python.org/3/reference/datamodel.html#function.__qualname__
+  name: __qualname__
+  uid: function.__qualname__
+- fullName: function.__type_params__
+  href: https://docs.python.org/3/reference/datamodel.html#function.__type_params__
+  name: __type_params__
+  uid: function.__type_params__
 - fullName: functools.partial.args
   href: https://docs.python.org/3/library/functools.html#functools.partial.args
   name: args
@@ -2575,14 +2639,46 @@ references:
   href: https://docs.python.org/3/library/http.cookies.html#http.cookies.Morsel.coded_value
   name: coded_value
   uid: http.cookies.Morsel.coded_value
+- fullName: http.cookies.Morsel.comment
+  href: https://docs.python.org/3/library/http.cookies.html#http.cookies.Morsel.comment
+  name: comment
+  uid: http.cookies.Morsel.comment
+- fullName: http.cookies.Morsel.domain
+  href: https://docs.python.org/3/library/http.cookies.html#http.cookies.Morsel.domain
+  name: domain
+  uid: http.cookies.Morsel.domain
+- fullName: http.cookies.Morsel.expires
+  href: https://docs.python.org/3/library/http.cookies.html#http.cookies.Morsel.expires
+  name: expires
+  uid: http.cookies.Morsel.expires
+- fullName: http.cookies.Morsel.httponly
+  href: https://docs.python.org/3/library/http.cookies.html#http.cookies.Morsel.httponly
+  name: httponly
+  uid: http.cookies.Morsel.httponly
 - fullName: http.cookies.Morsel.key
   href: https://docs.python.org/3/library/http.cookies.html#http.cookies.Morsel.key
   name: key
   uid: http.cookies.Morsel.key
+- fullName: http.cookies.Morsel.path
+  href: https://docs.python.org/3/library/http.cookies.html#http.cookies.Morsel.path
+  name: path
+  uid: http.cookies.Morsel.path
+- fullName: http.cookies.Morsel.samesite
+  href: https://docs.python.org/3/library/http.cookies.html#http.cookies.Morsel.samesite
+  name: samesite
+  uid: http.cookies.Morsel.samesite
+- fullName: http.cookies.Morsel.secure
+  href: https://docs.python.org/3/library/http.cookies.html#http.cookies.Morsel.secure
+  name: secure
+  uid: http.cookies.Morsel.secure
 - fullName: http.cookies.Morsel.value
   href: https://docs.python.org/3/library/http.cookies.html#http.cookies.Morsel.value
   name: value
   uid: http.cookies.Morsel.value
+- fullName: http.cookies.Morsel.version
+  href: https://docs.python.org/3/library/http.cookies.html#http.cookies.Morsel.version
+  name: version
+  uid: http.cookies.Morsel.version
 - fullName: http.server.BaseHTTPRequestHandler.MessageClass
   href: https://docs.python.org/3/library/http.server.html#http.server.BaseHTTPRequestHandler.MessageClass
   name: MessageClass
@@ -3387,6 +3483,10 @@ references:
   href: https://docs.python.org/3/library/lzma.html#lzma.LZMADecompressor.unused_data
   name: unused_data
   uid: lzma.LZMADecompressor.unused_data
+- fullName: mailbox.Maildir.colon
+  href: https://docs.python.org/3/library/mailbox.html#mailbox.Maildir.colon
+  name: colon
+  uid: mailbox.Maildir.colon
 - fullName: memoryview.c_contiguous
   href: https://docs.python.org/3/library/stdtypes.html#memoryview.c_contiguous
   name: c_contiguous
@@ -4995,6 +5095,22 @@ references:
   href: https://docs.python.org/3/library/tkinter.scrolledtext.html#tkinter.scrolledtext.ScrolledText.vbar
   name: vbar
   uid: tkinter.scrolledtext.ScrolledText.vbar
+- fullName: traceback.FrameSummary.filename
+  href: https://docs.python.org/3/library/traceback.html#traceback.FrameSummary.filename
+  name: filename
+  uid: traceback.FrameSummary.filename
+- fullName: traceback.FrameSummary.line
+  href: https://docs.python.org/3/library/traceback.html#traceback.FrameSummary.line
+  name: line
+  uid: traceback.FrameSummary.line
+- fullName: traceback.FrameSummary.lineno
+  href: https://docs.python.org/3/library/traceback.html#traceback.FrameSummary.lineno
+  name: lineno
+  uid: traceback.FrameSummary.lineno
+- fullName: traceback.FrameSummary.name
+  href: https://docs.python.org/3/library/traceback.html#traceback.FrameSummary.name
+  name: name
+  uid: traceback.FrameSummary.name
 - fullName: traceback.TracebackException.__cause__
   href: https://docs.python.org/3/library/traceback.html#traceback.TracebackException.__cause__
   name: __cause__
@@ -6291,6 +6407,10 @@ references:
   href: https://docs.python.org/3/library/ast.html#ast.NodeVisitor.visit
   name: visit
   uid: ast.NodeVisitor.visit
+- fullName: ast.NodeVisitor.visit_Constant
+  href: https://docs.python.org/3/library/ast.html#ast.NodeVisitor.visit_Constant
+  name: visit_Constant
+  uid: ast.NodeVisitor.visit_Constant
 - fullName: asyncio.AbstractChildWatcher.add_child_handler
   href: https://docs.python.org/3/library/asyncio-policy.html#asyncio.AbstractChildWatcher.add_child_handler
   name: add_child_handler
@@ -7683,6 +7803,10 @@ references:
   href: https://docs.python.org/3/library/calendar.html#calendar.HTMLCalendar.formatmonth
   name: formatmonth
   uid: calendar.HTMLCalendar.formatmonth
+- fullName: calendar.HTMLCalendar.formatmonthname
+  href: https://docs.python.org/3/library/calendar.html#calendar.HTMLCalendar.formatmonthname
+  name: formatmonthname
+  uid: calendar.HTMLCalendar.formatmonthname
 - fullName: calendar.HTMLCalendar.formatyear
   href: https://docs.python.org/3/library/calendar.html#calendar.HTMLCalendar.formatyear
   name: formatyear
@@ -7779,6 +7903,10 @@ references:
   href: https://docs.python.org/3/library/cmd.html#cmd.Cmd.default
   name: default
   uid: cmd.Cmd.default
+- fullName: cmd.Cmd.do_help
+  href: https://docs.python.org/3/library/cmd.html#cmd.Cmd.do_help
+  name: do_help
+  uid: cmd.Cmd.do_help
 - fullName: cmd.Cmd.emptyline
   href: https://docs.python.org/3/library/cmd.html#cmd.Cmd.emptyline
   name: emptyline
@@ -14459,6 +14587,26 @@ references:
   href: https://docs.python.org/3/library/queue.html#queue.SimpleQueue.qsize
   name: qsize
   uid: queue.SimpleQueue.qsize
+- fullName: random.Random.getrandbits
+  href: https://docs.python.org/3/library/random.html#random.Random.getrandbits
+  name: getrandbits
+  uid: random.Random.getrandbits
+- fullName: random.Random.getstate
+  href: https://docs.python.org/3/library/random.html#random.Random.getstate
+  name: getstate
+  uid: random.Random.getstate
+- fullName: random.Random.random
+  href: https://docs.python.org/3/library/random.html#random.Random.random
+  name: random
+  uid: random.Random.random
+- fullName: random.Random.seed
+  href: https://docs.python.org/3/library/random.html#random.Random.seed
+  name: seed
+  uid: random.Random.seed
+- fullName: random.Random.setstate
+  href: https://docs.python.org/3/library/random.html#random.Random.setstate
+  name: setstate
+  uid: random.Random.setstate
 - fullName: re.Match.__getitem__
   href: https://docs.python.org/3/library/re.html#re.Match.__getitem__
   name: __getitem__
@@ -15907,6 +16055,10 @@ references:
   href: https://docs.python.org/3/library/tarfile.html#tarfile.TarInfo.issym
   name: issym
   uid: tarfile.TarInfo.issym
+- fullName: tarfile.TarInfo.replace
+  href: https://docs.python.org/3/library/tarfile.html#tarfile.TarInfo.replace
+  name: replace
+  uid: tarfile.TarInfo.replace
 - fullName: tarfile.TarInfo.tobuf
   href: https://docs.python.org/3/library/tarfile.html#tarfile.TarInfo.tobuf
   name: tobuf
@@ -23547,22 +23699,70 @@ references:
   href: https://docs.python.org/3/library/tabnanny.html#tabnanny.verbose
   name: verbose
   uid: tabnanny.verbose
+- fullName: tarfile.AREGTYPE
+  href: https://docs.python.org/3/library/tarfile.html#tarfile.AREGTYPE
+  name: AREGTYPE
+  uid: tarfile.AREGTYPE
+- fullName: tarfile.BLKTYPE
+  href: https://docs.python.org/3/library/tarfile.html#tarfile.BLKTYPE
+  name: BLKTYPE
+  uid: tarfile.BLKTYPE
+- fullName: tarfile.CHRTYPE
+  href: https://docs.python.org/3/library/tarfile.html#tarfile.CHRTYPE
+  name: CHRTYPE
+  uid: tarfile.CHRTYPE
+- fullName: tarfile.CONTTYPE
+  href: https://docs.python.org/3/library/tarfile.html#tarfile.CONTTYPE
+  name: CONTTYPE
+  uid: tarfile.CONTTYPE
 - fullName: tarfile.DEFAULT_FORMAT
   href: https://docs.python.org/3/library/tarfile.html#tarfile.DEFAULT_FORMAT
   name: DEFAULT_FORMAT
   uid: tarfile.DEFAULT_FORMAT
+- fullName: tarfile.DIRTYPE
+  href: https://docs.python.org/3/library/tarfile.html#tarfile.DIRTYPE
+  name: DIRTYPE
+  uid: tarfile.DIRTYPE
 - fullName: tarfile.ENCODING
   href: https://docs.python.org/3/library/tarfile.html#tarfile.ENCODING
   name: ENCODING
   uid: tarfile.ENCODING
+- fullName: tarfile.FIFOTYPE
+  href: https://docs.python.org/3/library/tarfile.html#tarfile.FIFOTYPE
+  name: FIFOTYPE
+  uid: tarfile.FIFOTYPE
+- fullName: tarfile.GNUTYPE_LONGLINK
+  href: https://docs.python.org/3/library/tarfile.html#tarfile.GNUTYPE_LONGLINK
+  name: GNUTYPE_LONGLINK
+  uid: tarfile.GNUTYPE_LONGLINK
+- fullName: tarfile.GNUTYPE_LONGNAME
+  href: https://docs.python.org/3/library/tarfile.html#tarfile.GNUTYPE_LONGNAME
+  name: GNUTYPE_LONGNAME
+  uid: tarfile.GNUTYPE_LONGNAME
+- fullName: tarfile.GNUTYPE_SPARSE
+  href: https://docs.python.org/3/library/tarfile.html#tarfile.GNUTYPE_SPARSE
+  name: GNUTYPE_SPARSE
+  uid: tarfile.GNUTYPE_SPARSE
 - fullName: tarfile.GNU_FORMAT
   href: https://docs.python.org/3/library/tarfile.html#tarfile.GNU_FORMAT
   name: GNU_FORMAT
   uid: tarfile.GNU_FORMAT
+- fullName: tarfile.LNKTYPE
+  href: https://docs.python.org/3/library/tarfile.html#tarfile.LNKTYPE
+  name: LNKTYPE
+  uid: tarfile.LNKTYPE
 - fullName: tarfile.PAX_FORMAT
   href: https://docs.python.org/3/library/tarfile.html#tarfile.PAX_FORMAT
   name: PAX_FORMAT
   uid: tarfile.PAX_FORMAT
+- fullName: tarfile.REGTYPE
+  href: https://docs.python.org/3/library/tarfile.html#tarfile.REGTYPE
+  name: REGTYPE
+  uid: tarfile.REGTYPE
+- fullName: tarfile.SYMTYPE
+  href: https://docs.python.org/3/library/tarfile.html#tarfile.SYMTYPE
+  name: SYMTYPE
+  uid: tarfile.SYMTYPE
 - fullName: tarfile.USTAR_FORMAT
   href: https://docs.python.org/3/library/tarfile.html#tarfile.USTAR_FORMAT
   name: USTAR_FORMAT
@@ -28475,6 +28675,10 @@ references:
   href: https://docs.python.org/3/library/reprlib.html#reprlib.Repr
   name: Repr
   uid: reprlib.Repr
+- fullName: rlcompleter.Completer
+  href: https://docs.python.org/3/library/rlcompleter.html#rlcompleter.Completer
+  name: Completer
+  uid: rlcompleter.Completer
 - fullName: sched.scheduler
   href: https://docs.python.org/3/library/sched.html#sched.scheduler
   name: scheduler
