@@ -1,5 +1,6 @@
-- name: Getting started
+- name: Overview of MSAL Python
   href: index.md
+- name: Getting started
   items:
   - name: Register your app with Microsoft Entra ID
     href: /azure/active-directory/develop/active-directory-integrating-applications
