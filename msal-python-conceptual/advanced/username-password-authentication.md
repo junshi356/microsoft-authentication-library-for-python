@@ -33,7 +33,7 @@ Even if you choose to use Username Password Authentication, you should not persi
 
 ## Setup
 
-Microsoft identity platform supports username password flow on public client application only.
-So you would need to configure your app in this way. The follow screenshot is the panel from Azure Portal.
+Microsoft identity platform supports username password flow on public client application and Confidential client application.
+If you would need to configure your app as a public client application, turn on the switch on below screenshot to allow it.
 
 ![Public App Setup](https://user-images.githubusercontent.com/821550/76988648-4499c280-6902-11ea-8be5-00292624a274.png)
