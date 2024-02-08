@@ -26,7 +26,6 @@
   - name: Active Directory Federation Services (ADFS) Support
     href: advanced/msal-python-adfs-support.md
   - name: National clouds
-    href: /azure/active-directory/develop/msal-national-cloud?tabs=python
   - name: Username and password authentication
     href: advanced/username-password-authentication.md
   - name: How to generate secret and/or certificate for Confidential Client
