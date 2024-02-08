@@ -14,7 +14,6 @@ ms.reviewer: shermanouko, rayluo
 
 # Use MSAL Python to work with Azure AD B2C
 
-## Summary
 
 You can use MSAL Python to sign-in users with social identities, acquire tokens, and customize the sign-in experience by using [Azure AD B2C](https://aka.ms/aadb2c).
 
