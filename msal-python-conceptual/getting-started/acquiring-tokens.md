@@ -1,16 +1,15 @@
 ---
-title: Acquiring tokens
-description: Learn how to acquire tokenms for your Python applivccation. You can acquire tokens silently or interactively through a web browser.
+title: Acquire tokens
+description: Learn how to acquire tokens for your Python appliccation. You can acquire tokens silently or interactively through a web browser.
 author: Dickson-Mwendia
 manager: CelesteDG
-
 ms.service: msal
 ms.subservice: msal-python
 ms.topic: conceptual
 ms.date: 02/07/2024
 ms.author: dmwendia
 ms.reviewer: shermanouko, rayluo
-zone_pivot_groupsmsal-python-acquire-token
+zone_pivot_groups: msal-python-acquire-token
 ---
 
 # Acquiring tokens
