@@ -1,12 +1,10 @@
 - name: Overview of MSAL Python
   href: index.md
-- name: Getting started
+- name: Get started
   items:
-  - name: Register your app with Microsoft Entra ID
-    href: /azure/active-directory/develop/active-directory-integrating-applications
   - name: Client applications
     href: getting-started/client-applications.md
-  - name: Acquiring tokens
+  - name: Acquire tokens
     href: getting-started/acquiring-tokens.md
 
 - name: Advanced topics
@@ -23,7 +21,7 @@
     href: advanced/conditional-access.md
   - name: Token cache serialization
     href: advanced/msal-python-token-cache-serialization.md
-  - name: Developing an Azure AD B2C app with MSAL Python
+  - name: Develop an Azure AD B2C app with MSAL Python
     href: advanced/aad-b2c.md
   - name: Active Directory Federation Services (ADFS) Support
     href: advanced/msal-python-adfs-support.md

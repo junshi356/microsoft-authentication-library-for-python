@@ -44,6 +44,7 @@
       "breadcrumb_path": "/entra/msal/python/breadcrumb/toc.json",
       "extendBreadcrumb": true,
       "uhfHeaderId": "MSDocsHeader-Entra",
+      "zone_pivot_group_filename": "zone-pivot-groups.json",
       "feedback_system": "GitHub",
       "feedback_github_repo": "MicrosoftDocs/microsoft-authentication-library-for-python",
       "feedback_product_url": "https://github.com/AzureAD/microsoft-authentication-library-for-python/issues",
@@ -54,17 +55,13 @@
       ]
     },
     "fileMetadata": {
-      "author": {
-        "*.md": "localden",
-        "*/**.md": "localden"
-      },
-      "ms.author": {
-        "*.md": "ddelimarsky",
-        "*/**.md": "ddelimarsky"
-      },
       "ms.service": {
-        "*.md": "active-directory",
-        "*/**.md": "active-directory"
+        "*.md": "msal",
+        "*/**.md": "msal"
+      },
+      "ms.subservice": {
+        "*.md": "msal-python",
+        "*/**.md": "msal-python"
       },
       "titleSuffix": {
         "*.md": "Microsoft Authentication Library for Python",
