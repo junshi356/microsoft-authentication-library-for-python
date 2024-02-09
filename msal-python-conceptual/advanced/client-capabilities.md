@@ -1,6 +1,15 @@
 ---
 title: Client capabilities
 description: "The Microsoft Entra service provides features and policies which are applicable in certain scenarios, such as conditional access policies."
+author: Dickson-Mwendia
+manager: CelesteDG
+
+ms.service: msal
+ms.subservice: msal-python
+ms.topic: conceptual
+ms.date: 02/07/2024
+ms.author: dmwendia
+ms.reviewer: shermanouko, rayluo
 ---
 
 # Client capabilities
