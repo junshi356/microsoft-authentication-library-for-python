@@ -1,6 +1,15 @@
 ---
 title: Handle errors and exceptions in MSAL for Python
 description: Learn how to handle errors and exceptions, Conditional Access claims challenges, and retries in MSAL for Python applications.
+author: Dickson-Mwendia
+manager: CelesteDG
+
+ms.service: msal
+ms.subservice: msal-python
+ms.topic: conceptual
+ms.date: 02/07/2024
+ms.author: dmwendia
+ms.reviewer: shermanouko, rayluo
 ---
 
 # Handle errors and exceptions in MSAL for Python

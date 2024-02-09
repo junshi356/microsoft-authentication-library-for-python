@@ -1,6 +1,15 @@
 ---
 title: Logging errors and exceptions in MSAL for Python
 description: Learn how to log errors and exceptions in MSAL for Python
+author: Dickson-Mwendia
+manager: CelesteDG
+
+ms.service: msal
+ms.subservice: msal-python
+ms.topic: conceptual
+ms.date: 02/07/2024
+ms.author: dmwendia
+ms.reviewer: shermanouko, rayluo
 ---
 
 # Logging in MSAL for Python
