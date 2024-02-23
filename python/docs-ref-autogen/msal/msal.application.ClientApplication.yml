@@ -696,13 +696,13 @@ methods:
     types:
     - <xref:str>
   - name: prompt
-    description: 'By default, no prompt value will be sent, not even "none".
+    description: 'By default, no prompt value will be sent, not even string `"none"`.
 
       You will have to specify a value explicitly.
 
-      Its valid values are defined in Open ID Connect specs
+      Its valid values are the constants defined in
 
-      [https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest)'
+      <xref:msal.Prompt>.'
     defaultValue: None
     types:
     - <xref:str>
@@ -774,13 +774,13 @@ methods:
     types:
     - <xref:str>
   - name: prompt
-    description: 'By default, no prompt value will be sent, not even "none".
+    description: 'By default, no prompt value will be sent, not even string `"none"`.
 
       You will have to specify a value explicitly.
 
-      Its valid values are defined in Open ID Connect specs
+      Its valid values are the constants defined in
 
-      [https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest](https://openid.net/specs/openid-connect-core-1_0.html#AuthRequest)'
+      <xref:msal.Prompt>.'
     defaultValue: None
     types:
     - <xref:str>

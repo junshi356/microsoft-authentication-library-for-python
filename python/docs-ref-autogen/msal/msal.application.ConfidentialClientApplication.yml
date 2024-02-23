@@ -383,3 +383,10 @@ methods:
     description: "A dict representing the json response from AAD:\n\n* A successful\
       \ response would contain \"access_token\" key, \n\n* an error response would\
       \ contain \"error\" and usually \"error_description\"."
+- uid: msal.application.ConfidentialClientApplication.remove_tokens_for_client
+  name: remove_tokens_for_client
+  summary: 'Remove all tokens that were previously acquired via
+
+    <xref:msal.application.ConfidentialClientApplication.acquire_token_for_client>
+    for the current client.'
+  signature: remove_tokens_for_client()
