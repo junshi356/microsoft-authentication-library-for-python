@@ -10,6 +10,7 @@ ms.date: 02/07/2024
 ms.author: dmwendia
 ms.reviewer: shermanouko, rayluo
 zone_pivot_groups: msal-python-acquire-token
+zone_pivot_group_filename: /entra/msal/python/zone-pivot-groups.json
 ---
 
 # Acquiring tokens
