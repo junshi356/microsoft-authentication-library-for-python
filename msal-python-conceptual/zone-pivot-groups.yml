@@ -9,7 +9,7 @@ groups:
   prompt: Choose an option
   pivots:
   - id: pca
-    title: public client application
+    title: Public client application
   - id: cca
-    title: confidential client
+    title: Confidential client application
 ############ END 
