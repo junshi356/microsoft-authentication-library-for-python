@@ -120,10 +120,10 @@ TRhere are several samples you can use to get started with MSAL Python.
 
 ## References
 
-- MSAL Python library repository on [GitHub](ttps://github.com/AzureAD/microsoft-authentication-library-for-pytho)
+- MSAL Python library repository on [GitHub](https://github.com/AzureAD/microsoft-authentication-library-for-python)
 - [MSAL Python releases on GitHub](https://github.com/AzureAD/microsoft-authentication-library-for-python/releases).
 
 ## See also
 
 - [Instantiate your application](./getting-started/client-applications.md) using MSAL Python
-- [Acquire tokens](./getting-started/acquire_token.md) using MSAL Python
+- [Acquire tokens](./getting-started/acquiring-tokens.md) using MSAL Python
