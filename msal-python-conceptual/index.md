@@ -121,7 +121,7 @@ TRhere are several samples you can use to get started with MSAL Python.
 ## References
 
 - MSAL Python library repository on [GitHub](https://github.com/AzureAD/microsoft-authentication-library-for-python)
-- [MSAL Python releases on GitHub](https://github.com/AzureAD/microsoft-authentication-library-for-python/releases).
+- MSAL Python releases on [GitHub](https://github.com/AzureAD/microsoft-authentication-library-for-python/releases).
 
 ## See also
 
