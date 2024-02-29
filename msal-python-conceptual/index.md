@@ -43,7 +43,7 @@ MSAL Python is part of the [Microsoft identity platform](/entra/identity-platfor
 
 To use MSAL Python, register an application with the Microsoft identity platform. You'll need an Azure account with an active subscription. [Create a free account](https://signup.azure.com/) if you don't have one. You can register your app in a [customer tenant](/entra/external-id/customers/quickstart-tenant-setup) or [workforce tenant](/entra/identity-platform/scenario-web-app-sign-user-app-registration?tabs=python).
 
-MSAL Python can be used by applications to acquire tokens to access protected APIs. Tokens can be acquired by different **application types**. These app types include desktop applications, web applications, web APIs, and applications running on devices that don't have a browser (such as IoT devices). Different app types follow different auth flows.
+MSAL Python can be used by applications to acquire tokens to access protected APIs. Tokens can be acquired by different application types. These app types include desktop applications, web applications, web APIs, and applications running on devices that don't have a browser (such as IoT devices). Different app types follow different auth flows.
 
 In MSAL Python, applications are categorized as follows:
 
@@ -68,7 +68,7 @@ Acquiring tokens with MSAL Python follows a three-step pattern. There will be so
         authority="https://login.microsoftonline.com/common")
     ```
 
-    The authority value varies depending on the type of accounts you are signing-in and the kind of tenant your app is registered in. For example, to sign-in both work and personal Microsoft accounts provisioned in workforce tenants (Microsoft Entra ID) you would use `https://login.microsoftonline.com/c/common`. For customer accounts provisioned in customer tenants, your authority will take a form like `https://<subdomain>.ciamlogin.com`. For more information, see [token issuer documentation](/entra/identity-platform/access-tokens#validate-the-issuer).
+    The authority value varies depending on the type of accounts you are signing-in and the kind of tenant your app is registered in. For example, to sign-in both work and personal Microsoft accounts provisioned in workforce tenants (Microsoft Entra ID) you would use `https://login.microsoftonline.com/common`. For customer accounts provisioned in customer tenants, your authority will take a form like `https://<subdomain>.ciamlogin.com`. For more information, see [token issuer documentation](/entra/identity-platform/access-tokens#validate-the-issuer).
 
 1. Try and obtain the tokens from the cache first. The API model in MSAL provides you explicit control on how to utilize the token cache. While the caching part is technically optional, we highly recommend you to use it in your application. Using the cache you can ensure that you're not making any extra API calls and handle the token refresh automatically.
 
