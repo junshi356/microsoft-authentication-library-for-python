@@ -61,7 +61,7 @@ app = msal.ConfidentialClientApplication(
 
 When you instantiate a client application, there are two parameters you can use to define your caching preferences. These parameters are: `token_cache` and `http_cache`.
 
-- `token_cache` sets the token cache used by the client application instance. By default, an in-memory cache is created and used. For more information, see [token caching in MSAL Python](msal-python-token-cache-serialization.md).
+- `token_cache` sets the token cache used by the client application instance. By default, an in-memory cache is created and used. For more information, see [token caching in MSAL Python](../advanced/msal-python-token-cache-serialization.md).
 - `http_cache` is available in MSAL Python version 1.16+. This automatically caches some finite number of nontoken http responses, so that long-lived `PublicClientApplication` and `ConfidentialClientApplication` instances would be more performant and responsive in some situations. If the `http_cache` parameter isn't provided, MSAL uses an in-memory dict. If your app is a command-line app (CLI), you would want to persist your `http_cache` across different CLI runs. For more information, see the [reference guide](/python/api/msal/msal.application.clientapplication).
 
 ## Next steps
