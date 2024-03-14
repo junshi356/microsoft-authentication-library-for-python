@@ -54,7 +54,6 @@ constructor:
     types:
     - <xref:boolean>
   - name: client_id
-    isRequired: true
   - name: client_credential
     defaultValue: None
 methods:
