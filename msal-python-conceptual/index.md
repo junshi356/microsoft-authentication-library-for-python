@@ -31,7 +31,7 @@ pip install msal
 
 ## Identity concepts
 
-MSAL Python is part of the [Microsoft identity platform](/entra/identity-platform/v2-overview) ecosystem. It's important to farmiliarize yourself with the following concepts to effectively use MSAL Python to protect your applications and APIs:
+MSAL Python is part of the [Microsoft identity platform](/entra/identity-platform/v2-overview) ecosystem. It's important to familiarize yourself with the following concepts to effectively use MSAL Python to protect your applications and APIs:
 
 - [Identity and access management](/entra/fundamentals/identity-fundamental-concepts)
 - [Authentication and authorization](/entra/identity-platform/authentication-vs-authorization)
