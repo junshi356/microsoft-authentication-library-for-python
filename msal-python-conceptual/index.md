@@ -90,7 +90,7 @@ Acquiring tokens with MSAL Python follows a three-step pattern. There will be so
         result = app.acquire_token_silent(["User.Read"], account=chosen)
     ```
 
-1. If there is no suitable token in the cache or you've chosen to skip the previous step, send a request to Microsoft Entra ID to get a token. There are different methods based on your client type and scenario, but for the purposes of the example we're showing how to use [`acquire_token_interactive`](xref:msal.application.PublicClientApplication.acquire_token_interactive) which will prompt the user to provide their credentials.
+1. If there's no suitable token in the cache or you chose to skip the previous step, send a request to Microsoft Entra ID to get a token. There are different methods based on your client type and scenario, but for the purposes of the example we're showing how to use [`acquire_token_interactive`](xref:msal.application.PublicClientApplication.acquire_token_interactive), which prompts the user to provide their credentials.
 
    ```python
    if not result:
