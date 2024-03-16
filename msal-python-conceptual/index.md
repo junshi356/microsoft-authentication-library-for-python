@@ -43,7 +43,7 @@ MSAL Python is part of the [Microsoft identity platform](/entra/identity-platfor
 
 To use MSAL Python, register an application with the Microsoft identity platform. You'll need an Azure account with an active subscription. [Create a free account](https://signup.azure.com/) if you don't have one. You can register your app in a [customer tenant](/entra/external-id/customers/quickstart-tenant-setup) or [workforce tenant](/entra/identity-platform/scenario-web-app-sign-user-app-registration?tabs=python).
 
-MSAL Python can be used by applications to acquire tokens to access protected APIs. Tokens can be acquired by different application types. These app types include desktop applications, web applications, web APIs, and applications running on devices that don't have a browser (such as IoT devices). Different app types follow different auth flows.
+Applications can use MSAL Python to acquire tokens for accessing protected APIs. Different app types acquire tokens using different auth flows. The supported app types include desktop applications, web applications, web APIs, and applications running on devices that don't have a browser (such as IoT devices). 
 
 In MSAL Python, applications are categorized as follows:
 
