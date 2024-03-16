@@ -115,7 +115,7 @@ Acquiring tokens with MSAL Python follows a three-step pattern. There will be so
 
 TRhere are several samples you can use to get started with MSAL Python.
 
-- Samples from the [library repository](https://github.com/AzureAD/microsoft-authentication-library-for-python/blob/1.22.0/sample/interactive_sample.py).
+- Samples from the [library repository](https://github.com/AzureAD/microsoft-authentication-library-for-python/blob/1.22.0/sample). These samples demonstrate the different configurations and auth flows that you implement using MSAL Python.
 - A single repository with [samples used in our documentation](https://github.com/Azure-Samples/ms-identity-docs-code-python). These samples have supporting documentation to help you build and replicate them from scratch.
 
 ## References
