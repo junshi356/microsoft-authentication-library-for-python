@@ -3,36 +3,35 @@
     uid: project-msal
   - items:
     - name: Overview
-      uid: msal
+      uid: msal.application
+    - name: msal.application.ClientApplication
+      uid: msal.application.ClientApplication
+    - name: msal.application.ConfidentialClientApplication
+      uid: msal.application.ConfidentialClientApplication
+    - name: msal.application.PublicClientApplication
+      uid: msal.application.PublicClientApplication
+    name: msal.application
+  - items:
+    - name: Overview
+      uid: msal.auth_scheme
+    - name: msal.auth_scheme.PopAuthScheme
+      uid: msal.auth_scheme.PopAuthScheme
+    name: msal.auth_scheme
+  - items:
+    - name: Overview
+      uid: msal.token_cache
+    - name: msal.token_cache.SerializableTokenCache
+      uid: msal.token_cache.SerializableTokenCache
     - items:
       - name: Overview
-        uid: msal.application
-      - name: msal.application.ClientApplication
-        uid: msal.application.ClientApplication
-      - name: msal.application.ConfidentialClientApplication
-        uid: msal.application.ConfidentialClientApplication
-      - name: msal.application.PublicClientApplication
-        uid: msal.application.PublicClientApplication
-      name: msal.application
-    - items:
-      - name: Overview
-        uid: msal.auth_scheme
-      - name: msal.auth_scheme.PopAuthScheme
-        uid: msal.auth_scheme.PopAuthScheme
-      name: msal.auth_scheme
-    - items:
-      - name: Overview
-        uid: msal.token_cache
-      - name: msal.token_cache.SerializableTokenCache
-        uid: msal.token_cache.SerializableTokenCache
-      - items:
-        - name: Overview
-          uid: msal.token_cache.TokenCache
-        - name: msal.token_cache.TokenCache.AuthorityType
-          uid: msal.token_cache.TokenCache.AuthorityType
-        - name: msal.token_cache.TokenCache.CredentialType
-          uid: msal.token_cache.TokenCache.CredentialType
-        name: msal.token_cache.TokenCache
-      name: msal.token_cache
-    name: msal
+        uid: msal.token_cache.TokenCache
+      - name: msal.token_cache.TokenCache.AuthorityType
+        uid: msal.token_cache.TokenCache.AuthorityType
+      - name: msal.token_cache.TokenCache.CredentialType
+        uid: msal.token_cache.TokenCache.CredentialType
+      name: msal.token_cache.TokenCache
+    name: msal.token_cache
+  - name: msal
+    uid: msal
   name: msal
+
